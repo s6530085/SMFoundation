@@ -6,10 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		04A7398F1A7A2D7B0060AA82 /* SMFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFoundation.h; sourceTree = "<group>"; };
+		04A739901A7A2D870060AA82 /* SMCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommon.h; sourceTree = "<group>"; };
+		04A739911A7A2E260060AA82 /* NSString+SMFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SMFoundation.h"; sourceTree = "<group>"; };
+		04A739921A7A2E260060AA82 /* NSString+SMFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SMFoundation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		04A739881A7A259C0060AA82 = {
 			isa = PBXGroup;
 			children = (
+				04A7398F1A7A2D7B0060AA82 /* SMFoundation.h */,
+				04A739901A7A2D870060AA82 /* SMCommon.h */,
+				04A739911A7A2E260060AA82 /* NSString+SMFoundation.h */,
+				04A739921A7A2E260060AA82 /* NSString+SMFoundation.m */,
 			);
 			sourceTree = "<group>";
 		};
