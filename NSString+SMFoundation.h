@@ -8,6 +8,6 @@
 
 @interface NSString (SMFoundation)
 
-+ (instancetype)fuckYou;
++ (instancetype)sm_fuckYou;
 
 @end

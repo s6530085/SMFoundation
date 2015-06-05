@@ -10,7 +10,7 @@
 
 @implementation NSString (SMFoundation)
 
-+ (instancetype)fuckYou
++ (instancetype)sm_fuckYou
 {
     return @"fuckYou";
 }
