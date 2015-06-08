@@ -14,6 +14,26 @@
 		04B807EB1B2533ED00C0600F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B807EA1B2533ED00C0600F /* Images.xcassets */; };
 		04B807EE1B2533ED00C0600F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B807EC1B2533ED00C0600F /* LaunchScreen.xib */; };
 		04B807FA1B2533ED00C0600F /* SMFoundationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B807F91B2533ED00C0600F /* SMFoundationTestTests.m */; };
+		04B808081B2536AA00C0600F /* NSString+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808051B2536AA00C0600F /* NSString+SMFoundation.m */; };
+		04B8080B1B255DDB00C0600F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 04B808091B255DDB00C0600F /* README.md */; };
+		04B8080C1B255DDB00C0600F /* SMFoundation.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04B8080A1B255DDB00C0600F /* SMFoundation.podspec */; };
+		04B8080F1B2563D100C0600F /* SMBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8080E1B2563D100C0600F /* SMBlock.m */; };
+		04B808151B25797D00C0600F /* UIView+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808141B25797D00C0600F /* UIView+SMFoundation.m */; };
+		04B808181B257D5D00C0600F /* NSObject+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808171B257D5D00C0600F /* NSObject+SMFoundation.m */; };
+		04B8081B1B2586B500C0600F /* NSArray+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8081A1B2586B500C0600F /* NSArray+SMFoundation.m */; };
+		04B8081E1B2587F100C0600F /* NSMutableArray+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8081D1B2587F100C0600F /* NSMutableArray+SMFoundation.m */; };
+		04B808211B258A3700C0600F /* NSDictionary+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808201B258A3700C0600F /* NSDictionary+SMFoundation.m */; };
+		04B808241B258C3800C0600F /* UIColor+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808231B258C3800C0600F /* UIColor+SMFoundation.m */; };
+		04B808271B258CEC00C0600F /* UIImage+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808261B258CEC00C0600F /* UIImage+SMFoundation.m */; };
+		04B8082A1B25924600C0600F /* UIImageView+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808291B25924600C0600F /* UIImageView+SMFoundation.m */; };
+		04B8082D1B2592AA00C0600F /* UILabel+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8082C1B2592AA00C0600F /* UILabel+SMFoundation.m */; };
+		04B808301B2595CF00C0600F /* UITextField+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8082F1B2595CF00C0600F /* UITextField+SMFoundation.m */; };
+		04B808331B2595E200C0600F /* UITextView+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808321B2595E200C0600F /* UITextView+SMFoundation.m */; };
+		04B808361B2595FE00C0600F /* NSDate+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808351B2595FE00C0600F /* NSDate+SMFoundation.m */; };
+		04B808391B25961B00C0600F /* UITableView+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808381B25961B00C0600F /* UITableView+SMFoundation.m */; };
+		04B8083C1B25965700C0600F /* NSFileManager+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8083B1B25965700C0600F /* NSFileManager+SMFoundation.m */; };
+		04B8083F1B25967600C0600F /* NSTimer+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8083E1B25967600C0600F /* NSTimer+SMFoundation.m */; };
+		04B808421B25968400C0600F /* UIApplication+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808411B25968400C0600F /* UIApplication+SMFoundation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +60,46 @@
 		04B807F31B2533ED00C0600F /* SMFoundationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMFoundationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B807F81B2533ED00C0600F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B807F91B2533ED00C0600F /* SMFoundationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFoundationTestTests.m; sourceTree = "<group>"; };
+		04B808041B2536AA00C0600F /* NSString+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SMFoundation.h"; path = "../SMFoundation/NSString+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808051B2536AA00C0600F /* NSString+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SMFoundation.m"; path = "../SMFoundation/NSString+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808061B2536AA00C0600F /* SMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCommon.h; path = ../SMFoundation/SMCommon.h; sourceTree = "<group>"; };
+		04B808071B2536AA00C0600F /* SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMFoundation.h; path = ../SMFoundation/SMFoundation.h; sourceTree = "<group>"; };
+		04B808091B255DDB00C0600F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		04B8080A1B255DDB00C0600F /* SMFoundation.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMFoundation.podspec; path = ../../SMFoundation.podspec; sourceTree = "<group>"; };
+		04B8080D1B2563D100C0600F /* SMBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBlock.h; path = ../SMFoundation/SMBlock.h; sourceTree = "<group>"; };
+		04B8080E1B2563D100C0600F /* SMBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBlock.m; path = ../SMFoundation/SMBlock.m; sourceTree = "<group>"; };
+		04B808131B25797D00C0600F /* UIView+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+SMFoundation.h"; path = "../SMFoundation/UIView+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808141B25797D00C0600F /* UIView+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+SMFoundation.m"; path = "../SMFoundation/UIView+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808161B257D5D00C0600F /* NSObject+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SMFoundation.h"; path = "../SMFoundation/NSObject+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808171B257D5D00C0600F /* NSObject+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SMFoundation.m"; path = "../SMFoundation/NSObject+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808191B2586B500C0600F /* NSArray+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+SMFoundation.h"; path = "../SMFoundation/NSArray+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8081A1B2586B500C0600F /* NSArray+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SMFoundation.m"; path = "../SMFoundation/NSArray+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8081C1B2587F100C0600F /* NSMutableArray+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SMFoundation.h"; path = "../SMFoundation/NSMutableArray+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8081D1B2587F100C0600F /* NSMutableArray+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SMFoundation.m"; path = "../SMFoundation/NSMutableArray+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8081F1B258A3700C0600F /* NSDictionary+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SMFoundation.h"; path = "../SMFoundation/NSDictionary+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808201B258A3700C0600F /* NSDictionary+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SMFoundation.m"; path = "../SMFoundation/NSDictionary+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808221B258C3800C0600F /* UIColor+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+SMFoundation.h"; path = "../SMFoundation/UIColor+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808231B258C3800C0600F /* UIColor+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SMFoundation.m"; path = "../SMFoundation/UIColor+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808251B258CEC00C0600F /* UIImage+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+SMFoundation.h"; path = "../SMFoundation/UIImage+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808261B258CEC00C0600F /* UIImage+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SMFoundation.m"; path = "../SMFoundation/UIImage+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808281B25924500C0600F /* UIImageView+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SMFoundation.h"; path = "../SMFoundation/UIImageView+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808291B25924600C0600F /* UIImageView+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SMFoundation.m"; path = "../SMFoundation/UIImageView+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8082B1B2592AA00C0600F /* UILabel+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+SMFoundation.h"; path = "../SMFoundation/UILabel+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8082C1B2592AA00C0600F /* UILabel+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+SMFoundation.m"; path = "../SMFoundation/UILabel+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8082E1B2595CF00C0600F /* UITextField+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+SMFoundation.h"; path = "../SMFoundation/UITextField+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8082F1B2595CF00C0600F /* UITextField+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+SMFoundation.m"; path = "../SMFoundation/UITextField+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808311B2595E200C0600F /* UITextView+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView+SMFoundation.h"; path = "../SMFoundation/UITextView+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808321B2595E200C0600F /* UITextView+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView+SMFoundation.m"; path = "../SMFoundation/UITextView+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808341B2595FE00C0600F /* NSDate+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+SMFoundation.h"; path = "../SMFoundation/NSDate+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808351B2595FE00C0600F /* NSDate+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+SMFoundation.m"; path = "../SMFoundation/NSDate+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808371B25961B00C0600F /* UITableView+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+SMFoundation.h"; path = "../SMFoundation/UITableView+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808381B25961B00C0600F /* UITableView+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+SMFoundation.m"; path = "../SMFoundation/UITableView+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8083A1B25965600C0600F /* NSFileManager+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+SMFoundation.h"; path = "../SMFoundation/NSFileManager+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8083B1B25965700C0600F /* NSFileManager+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+SMFoundation.m"; path = "../SMFoundation/NSFileManager+SMFoundation.m"; sourceTree = "<group>"; };
+		04B8083D1B25967600C0600F /* NSTimer+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+SMFoundation.h"; path = "../SMFoundation/NSTimer+SMFoundation.h"; sourceTree = "<group>"; };
+		04B8083E1B25967600C0600F /* NSTimer+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+SMFoundation.m"; path = "../SMFoundation/NSTimer+SMFoundation.m"; sourceTree = "<group>"; };
+		04B808401B25968400C0600F /* UIApplication+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+SMFoundation.h"; path = "../SMFoundation/UIApplication+SMFoundation.h"; sourceTree = "<group>"; };
+		04B808411B25968400C0600F /* UIApplication+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+SMFoundation.m"; path = "../SMFoundation/UIApplication+SMFoundation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +123,7 @@
 		04B807D11B2533ED00C0600F = {
 			isa = PBXGroup;
 			children = (
+				04B808031B25369200C0600F /* SMFoundation */,
 				04B807DC1B2533ED00C0600F /* SMFoundationTest */,
 				04B807F61B2533ED00C0600F /* SMFoundationTestTests */,
 				04B807DB1B2533ED00C0600F /* Products */,
@@ -96,6 +157,8 @@
 		04B807DD1B2533ED00C0600F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04B808091B255DDB00C0600F /* README.md */,
+				04B8080A1B255DDB00C0600F /* SMFoundation.podspec */,
 				04B807DE1B2533ED00C0600F /* Info.plist */,
 				04B807DF1B2533ED00C0600F /* main.m */,
 			);
@@ -117,6 +180,51 @@
 				04B807F81B2533ED00C0600F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B808031B25369200C0600F /* SMFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				04B808161B257D5D00C0600F /* NSObject+SMFoundation.h */,
+				04B808171B257D5D00C0600F /* NSObject+SMFoundation.m */,
+				04B808041B2536AA00C0600F /* NSString+SMFoundation.h */,
+				04B808051B2536AA00C0600F /* NSString+SMFoundation.m */,
+				04B808191B2586B500C0600F /* NSArray+SMFoundation.h */,
+				04B8081A1B2586B500C0600F /* NSArray+SMFoundation.m */,
+				04B8081C1B2587F100C0600F /* NSMutableArray+SMFoundation.h */,
+				04B8081D1B2587F100C0600F /* NSMutableArray+SMFoundation.m */,
+				04B8081F1B258A3700C0600F /* NSDictionary+SMFoundation.h */,
+				04B808201B258A3700C0600F /* NSDictionary+SMFoundation.m */,
+				04B808341B2595FE00C0600F /* NSDate+SMFoundation.h */,
+				04B808351B2595FE00C0600F /* NSDate+SMFoundation.m */,
+				04B8083A1B25965600C0600F /* NSFileManager+SMFoundation.h */,
+				04B8083B1B25965700C0600F /* NSFileManager+SMFoundation.m */,
+				04B8083D1B25967600C0600F /* NSTimer+SMFoundation.h */,
+				04B8083E1B25967600C0600F /* NSTimer+SMFoundation.m */,
+				04B808131B25797D00C0600F /* UIView+SMFoundation.h */,
+				04B808141B25797D00C0600F /* UIView+SMFoundation.m */,
+				04B808221B258C3800C0600F /* UIColor+SMFoundation.h */,
+				04B808231B258C3800C0600F /* UIColor+SMFoundation.m */,
+				04B808251B258CEC00C0600F /* UIImage+SMFoundation.h */,
+				04B808261B258CEC00C0600F /* UIImage+SMFoundation.m */,
+				04B808281B25924500C0600F /* UIImageView+SMFoundation.h */,
+				04B808291B25924600C0600F /* UIImageView+SMFoundation.m */,
+				04B8082B1B2592AA00C0600F /* UILabel+SMFoundation.h */,
+				04B8082C1B2592AA00C0600F /* UILabel+SMFoundation.m */,
+				04B8082E1B2595CF00C0600F /* UITextField+SMFoundation.h */,
+				04B8082F1B2595CF00C0600F /* UITextField+SMFoundation.m */,
+				04B808311B2595E200C0600F /* UITextView+SMFoundation.h */,
+				04B808321B2595E200C0600F /* UITextView+SMFoundation.m */,
+				04B808371B25961B00C0600F /* UITableView+SMFoundation.h */,
+				04B808381B25961B00C0600F /* UITableView+SMFoundation.m */,
+				04B808401B25968400C0600F /* UIApplication+SMFoundation.h */,
+				04B808411B25968400C0600F /* UIApplication+SMFoundation.m */,
+				04B8080D1B2563D100C0600F /* SMBlock.h */,
+				04B8080E1B2563D100C0600F /* SMBlock.m */,
+				04B808061B2536AA00C0600F /* SMCommon.h */,
+				04B808071B2536AA00C0600F /* SMFoundation.h */,
+			);
+			name = SMFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +310,7 @@
 				04B807E91B2533ED00C0600F /* Main.storyboard in Resources */,
 				04B807EE1B2533ED00C0600F /* LaunchScreen.xib in Resources */,
 				04B807EB1B2533ED00C0600F /* Images.xcassets in Resources */,
+				04B8080C1B255DDB00C0600F /* SMFoundation.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +328,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B8081E1B2587F100C0600F /* NSMutableArray+SMFoundation.m in Sources */,
+				04B808081B2536AA00C0600F /* NSString+SMFoundation.m in Sources */,
 				04B807E61B2533ED00C0600F /* ViewController.m in Sources */,
+				04B808331B2595E200C0600F /* UITextView+SMFoundation.m in Sources */,
+				04B8083F1B25967600C0600F /* NSTimer+SMFoundation.m in Sources */,
+				04B8080B1B255DDB00C0600F /* README.md in Sources */,
+				04B8080F1B2563D100C0600F /* SMBlock.m in Sources */,
+				04B808181B257D5D00C0600F /* NSObject+SMFoundation.m in Sources */,
+				04B8081B1B2586B500C0600F /* NSArray+SMFoundation.m in Sources */,
+				04B8082A1B25924600C0600F /* UIImageView+SMFoundation.m in Sources */,
+				04B8083C1B25965700C0600F /* NSFileManager+SMFoundation.m in Sources */,
+				04B808391B25961B00C0600F /* UITableView+SMFoundation.m in Sources */,
 				04B807E31B2533ED00C0600F /* AppDelegate.m in Sources */,
+				04B808241B258C3800C0600F /* UIColor+SMFoundation.m in Sources */,
+				04B808211B258A3700C0600F /* NSDictionary+SMFoundation.m in Sources */,
+				04B808271B258CEC00C0600F /* UIImage+SMFoundation.m in Sources */,
 				04B807E01B2533ED00C0600F /* main.m in Sources */,
+				04B8082D1B2592AA00C0600F /* UILabel+SMFoundation.m in Sources */,
+				04B808361B2595FE00C0600F /* NSDate+SMFoundation.m in Sources */,
+				04B808301B2595CF00C0600F /* UITextField+SMFoundation.m in Sources */,
+				04B808151B25797D00C0600F /* UIView+SMFoundation.m in Sources */,
+				04B808421B25968400C0600F /* UIApplication+SMFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +544,7 @@
 				04B807FF1B2533ED00C0600F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B808001B2533ED00C0600F /* Build configuration list for PBXNativeTarget "SMFoundationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +553,7 @@
 				04B808021B2533ED00C0600F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
