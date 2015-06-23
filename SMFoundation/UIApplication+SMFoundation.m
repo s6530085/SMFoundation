@@ -14,7 +14,6 @@
 
 - (void)startRemovePush
 {
-    if (kSystemVersionReachesIOS8) {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
         
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge
@@ -23,13 +22,11 @@
                                                                                  categories:nil];
         [self registerUserNotificationSettings:settings];
         [self registerForRemoteNotifications];
-#endif
-    }
-    else {
+#else
         [self registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge
                                                   |UIRemoteNotificationTypeSound
                                                   |UIRemoteNotificationTypeAlert)];
-    }
+#endif
 }
 
 
