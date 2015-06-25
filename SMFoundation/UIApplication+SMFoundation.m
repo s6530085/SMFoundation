@@ -56,4 +56,29 @@
 }
 
 
+- (AppScreenType)screenType
+{
+    // todosm 仍须验证，特别是6p的，还没适配过
+    if (kScreenScale == 1.0f) {
+        return AppScreenTypeNonRetina;
+    }
+    CGFloat screenHeight = kScreenHeight;
+    if (screenHeight == 480.0f) {
+        return AppScreenType4;
+    }
+    else if (screenHeight == 568.0f) {
+        return AppScreenType5;
+    }
+    else if (screenHeight == 667.0f) {
+        return AppScreenType6;
+    }
+    else if (screenHeight == 1104.0f) {
+        return AppScreenType6p;
+    }
+    else {
+        return AppScreenTypeUnknown;
+    }
+}
+
+
 @end

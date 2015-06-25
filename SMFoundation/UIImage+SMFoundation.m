@@ -8,6 +8,7 @@
 
 #import "UIImage+SMFoundation.h"
 #import "SMCommon.h"
+#import "UIApplication+SMFoundation.h"
 
 @implementation UIImage (SMFoundation)
 
@@ -75,6 +76,20 @@
     UIGraphicsEndImageContext();
     // 返回新的改变大小后的图片
     return scaledImage;
+}
+
+
+- (BOOL)writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile quality:(CGFloat)quality
+{
+    // 顺便排除以外
+    if (quality >= 1.0f || quality < 0.0f) {
+        NSData *imageData = UIImageJPEGRepresentation(self, 1.0f);
+        return [imageData writeToFile:path atomically:useAuxiliaryFile];
+    }
+    else {
+        NSData *data = UIImageJPEGRepresentation(self, quality);
+        return [data writeToFile:path atomically:useAuxiliaryFile];
+    }
 }
 
 
@@ -181,5 +196,38 @@
     return img;
 }
 
+
++ (UIImage *)launchingImage
+{
+    AppScreenType type = [[UIApplication sharedApplication] screenType];
+    NSString *imageName = nil;
+    // things to http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage
+    switch (type) {
+        case AppScreenTypeNonRetina:
+            imageName = @"LaunchImage.png";
+            break;
+            
+        case AppScreenType4:
+            imageName = @"LaunchImage@2x.png";
+            break;
+            
+        case AppScreenType5:
+            imageName = @"LaunchImage-568h@2x.png";
+            break;
+            
+        case AppScreenType6:
+            imageName = @"LaunchImage-800-667h@2x.png";
+            break;
+            
+        case AppScreenType6p:
+            imageName = @"LaunchImage-800-Portrait-736h@3x.png";
+            break;
+            
+        default:
+            break;
+    }
+    
+    return [UIImage imageNamed:imageName];
+}
 
 @end

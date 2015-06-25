@@ -15,9 +15,12 @@
 - (UIImage *)centerSquareImage;
 - (UIImage *)imageScaledToFitUploadSize;
 - (UIImage *)scaledToFitSize:(CGSize)size;
-- (BOOL)writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile compress:(BOOL)compress;
+// quality 为1.0及以上时不压缩，否则按照quality素质压缩
+- (BOOL)writeToFile:(NSString *)path atomically:(BOOL)useAuxiliaryFile quality:(CGFloat)quality;
 - (UIImage *)fixOrientation;
 + (UIImage *)retina4CompatibleImageNamed:(NSString *)imageName;
 + (UIImage *)patternImageWithColor:(UIColor *)color;
+// 暂时只支持竖屏的4,5,6,6p四种尺寸
++ (UIImage *)launchingImage;
 
 @end

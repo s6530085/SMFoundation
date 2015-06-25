@@ -22,6 +22,9 @@
 #import "UIImage+SMFoundation.h"
 #import "UIImageView+SMFoundation.h"
 #import "UILabel+SMFoundation.h"
-
+#import "UITextField+SMFoundation.h"
+#import "UITextView+SMFoundation.h"
+#import "UITableView+SMFoundation.h"
+#import "UIApplication+SMFoundation.h"
 
 #endif
