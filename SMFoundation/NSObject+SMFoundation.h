@@ -12,5 +12,6 @@
 
 - (BOOL)notNilOrEmpty;
 - (instancetype)brustCopy;
++ (instancetype)sm_sharedInstance;
 
 @end

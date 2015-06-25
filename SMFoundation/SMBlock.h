@@ -22,10 +22,10 @@ _sharedObject = block(); \
 return _sharedObject; \
 
 
-extern void yoho_dispatch_execute_in_worker_queue(dispatch_block_t block);
-extern void yoho_dispatch_execute_in_main_queue(dispatch_block_t block);
-extern void yoho_dispatch_execute_in_main_queue_after(double delay, dispatch_block_t block);
+extern void sm_dispatch_execute_in_worker_queue(dispatch_block_t block);
+extern void sm_dispatch_execute_in_main_queue(dispatch_block_t block);
+extern void sm_dispatch_execute_in_main_queue_after(double delay, dispatch_block_t block);
 
 
-extern BOOL yoho_option_contains_bit(NSUInteger option, NSUInteger bit);
+extern BOOL sm_option_contains_bit(NSUInteger option, NSUInteger bit);
 
