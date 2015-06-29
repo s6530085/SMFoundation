@@ -144,11 +144,23 @@
 }
 
 
+- (CGFloat)x
+{
+    return self.frame.origin.x;
+}
+
+
 - (void)setY:(CGFloat)y
 {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
+}
+
+
+- (CGFloat)y
+{
+    return self.frame.origin.y;
 }
 
 
