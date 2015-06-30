@@ -25,6 +25,8 @@
 #import "UITextField+SMFoundation.h"
 #import "UITextView+SMFoundation.h"
 #import "UITableView+SMFoundation.h"
+#import "UIButton+SMFoundation.h"
+#import "UIBarButtonItem+SMFoundation.h"
 #import "UIApplication+SMFoundation.h"
 #import "SMBlock.h"
 #import "SMCommon.h"
