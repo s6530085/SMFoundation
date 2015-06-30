@@ -35,7 +35,7 @@
 		04B8083F1B25967600C0600F /* NSTimer+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B8083E1B25967600C0600F /* NSTimer+SMFoundation.m */; };
 		04B808421B25968400C0600F /* UIApplication+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808411B25968400C0600F /* UIApplication+SMFoundation.m */; };
 		387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */; };
-		387A1EB91B42888B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB81B42888B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
+		387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,8 +104,8 @@
 		04B808411B25968400C0600F /* UIApplication+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+SMFoundation.m"; path = "../SMFoundation/UIApplication+SMFoundation.m"; sourceTree = "<group>"; };
 		387A1EB41B42887700EF154F /* UIButton+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+SMFoundation.h"; path = "../SMFoundation/UIButton+SMFoundation.h"; sourceTree = "<group>"; };
 		387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SMFoundation.m"; path = "../SMFoundation/UIButton+SMFoundation.m"; sourceTree = "<group>"; };
-		387A1EB71B42888B00EF154F /* UIBarButtonItem+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SMFoundation.h"; sourceTree = "<group>"; };
-		387A1EB81B42888B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
+		387A1EBA1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+SMFoundation.h"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.h"; sourceTree = "<group>"; };
+		387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SMFoundation.m"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,8 +225,8 @@
 				04B808381B25961B00C0600F /* UITableView+SMFoundation.m */,
 				387A1EB41B42887700EF154F /* UIButton+SMFoundation.h */,
 				387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */,
-				387A1EB71B42888B00EF154F /* UIBarButtonItem+SMFoundation.h */,
-				387A1EB81B42888B00EF154F /* UIBarButtonItem+SMFoundation.m */,
+				387A1EBA1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.h */,
+				387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */,
 				04B808401B25968400C0600F /* UIApplication+SMFoundation.h */,
 				04B808411B25968400C0600F /* UIApplication+SMFoundation.m */,
 				04B8080D1B2563D100C0600F /* SMBlock.h */,
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B8081E1B2587F100C0600F /* NSMutableArray+SMFoundation.m in Sources */,
-				387A1EB91B42888B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */,
+				387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */,
 				04B808081B2536AA00C0600F /* NSString+SMFoundation.m in Sources */,
 				04B807E61B2533ED00C0600F /* ViewController.m in Sources */,
 				04B808331B2595E200C0600F /* UITextView+SMFoundation.m in Sources */,
