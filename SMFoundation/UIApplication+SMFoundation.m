@@ -58,21 +58,21 @@
 
 - (AppScreenType)screenType
 {
-    // todosm 仍须验证，特别是6p的，还没适配过
+    // 有可能screen不包括statusbar，所以要放宽
     if (kScreenScale == 1.0f) {
         return AppScreenTypeNonRetina;
     }
     CGFloat screenHeight = kScreenHeight;
-    if (screenHeight == 480.0f) {
+    if (screenHeight <= 481.0f) {
         return AppScreenType4;
     }
-    else if (screenHeight == 568.0f) {
+    else if (screenHeight <= 569.0f) {
         return AppScreenType5;
     }
-    else if (screenHeight == 667.0f) {
+    else if (screenHeight <= 668.0f) {
         return AppScreenType6;
     }
-    else if (screenHeight == 1104.0f) {
+    else if (screenHeight <= 1105.0f) {
         return AppScreenType6p;
     }
     else {

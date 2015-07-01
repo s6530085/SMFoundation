@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SMFoundation.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    AppScreenType t = [application screenType];
     // Override point for customization after application launch.
     return YES;
 }
