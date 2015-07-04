@@ -12,6 +12,17 @@
 
 @implementation UIImage (SMFoundation)
 
+- (CGFloat)width
+{
+    return self.size.width;
+}
+
+
+- (CGFloat)height
+{
+    return self.size.height;
+}
+
 
 - (UIImage *)imageInRect:(CGRect)aRect
 {

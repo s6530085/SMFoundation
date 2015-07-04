@@ -10,6 +10,9 @@
 
 @interface UIImage (SMFoundation)
 
+- (CGFloat)width;
+- (CGFloat)height;
+
 // 如果参数比原image的size小，是截取原image相应的rect里的部分，如果参数比原image大，则是白底填充原image
 - (UIImage *)imageInRect:(CGRect)aRect;
 - (UIImage *)centerSquareImage;
