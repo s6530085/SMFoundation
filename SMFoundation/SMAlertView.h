@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 typedef void (^SMTouchBlock)(NSInteger);
-typedef BOOL (^SMValidateBlock)();
+typedef BOOL (^SMAlertValidateBlock)();
 
-@interface SMBlockView : UIAlertView
+@interface SMAlertView : UIAlertView
 
 @property (nonatomic, copy) SMTouchBlock block;
-@property (nonatomic, copy) SMValidateBlock validateBlock;
+@property (nonatomic, copy) SMAlertValidateBlock validateBlock;
 
 // 只有一个other按钮
 - (id)initWithTitle:(NSString *)title

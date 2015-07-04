@@ -35,7 +35,7 @@
 		04B808421B25968400C0600F /* UIApplication+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808411B25968400C0600F /* UIApplication+SMFoundation.m */; };
 		387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */; };
 		387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
-		38EBF4A71B4776E8002A8EE5 /* SMBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EBF4A61B4776E8002A8EE5 /* SMBlockView.m */; };
+		38EBF4A71B4776E8002A8EE5 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +105,8 @@
 		387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SMFoundation.m"; path = "../SMFoundation/UIButton+SMFoundation.m"; sourceTree = "<group>"; };
 		387A1EBA1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+SMFoundation.h"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.h"; sourceTree = "<group>"; };
 		387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SMFoundation.m"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
-		38EBF4A51B4776E8002A8EE5 /* SMBlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBlockView.h; path = ../SMFoundation/SMBlockView.h; sourceTree = "<group>"; };
-		38EBF4A61B4776E8002A8EE5 /* SMBlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBlockView.m; path = ../SMFoundation/SMBlockView.m; sourceTree = "<group>"; };
+		38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAlertView.h; path = ../SMFoundation/SMAlertView.h; sourceTree = "<group>"; };
+		38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAlertView.m; path = ../SMFoundation/SMAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,8 +229,8 @@
 				387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */,
 				04B808401B25968400C0600F /* UIApplication+SMFoundation.h */,
 				04B808411B25968400C0600F /* UIApplication+SMFoundation.m */,
-				38EBF4A51B4776E8002A8EE5 /* SMBlockView.h */,
-				38EBF4A61B4776E8002A8EE5 /* SMBlockView.m */,
+				38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */,
+				38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */,
 				04B8080D1B2563D100C0600F /* SMBlock.h */,
 				04B8080E1B2563D100C0600F /* SMBlock.m */,
 				04B808061B2536AA00C0600F /* SMCommon.h */,
@@ -355,7 +355,7 @@
 				04B808391B25961B00C0600F /* UITableView+SMFoundation.m in Sources */,
 				04B807E31B2533ED00C0600F /* AppDelegate.m in Sources */,
 				04B808241B258C3800C0600F /* UIColor+SMFoundation.m in Sources */,
-				38EBF4A71B4776E8002A8EE5 /* SMBlockView.m in Sources */,
+				38EBF4A71B4776E8002A8EE5 /* SMAlertView.m in Sources */,
 				04B808211B258A3700C0600F /* NSDictionary+SMFoundation.m in Sources */,
 				04B808271B258CEC00C0600F /* UIImage+SMFoundation.m in Sources */,
 				04B807E01B2533ED00C0600F /* main.m in Sources */,

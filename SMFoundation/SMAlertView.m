@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 study_sun. All rights reserved.
 //
 
-#import "SMBlockView.h"
+#import "SMAlertView.h"
 
-@implementation SMBlockView
+@implementation SMAlertView
 
 
 - (id)initWithTitle:(NSString *)title
@@ -30,7 +30,7 @@
 
 + (void)showAlertMessage:(NSString *)message
 {
-    SMBlockView *alert = [[SMBlockView alloc] initWithTitle:@"温馨提示" message:message cancelButtonTitle:@"确定" otherButtonTitle:nil block:nil];
+    SMAlertView *alert = [[SMAlertView alloc] initWithTitle:@"温馨提示" message:message cancelButtonTitle:@"确定" otherButtonTitle:nil block:nil];
     [alert show];
 }
 
