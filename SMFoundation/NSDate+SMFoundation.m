@@ -52,4 +52,30 @@ static NSDateFormatter *formatter_ = nil;
     return [formatter_ dateFromString:dateString];
 }
 
+
++ (NSString *)currentMonth
+{
+    static NSString *_currnetMonth = nil;
+    if (_currnetMonth == nil) {
+        NSDateFormatter *monthFormat = [[NSDateFormatter alloc] init];
+        [monthFormat setDateFormat:@"MM"];
+        NSDate *date = [NSDate date];
+        _currnetMonth = [monthFormat stringFromDate:date];
+    }
+    return _currnetMonth;
+}
+
+
++ (NSString *)currentYear
+{
+    static NSString *_currentYear = nil;
+    if (_currentYear == nil) {
+        NSDate *date = [NSDate date];
+        NSDateFormatter *yearFormat = [[NSDateFormatter alloc] init];
+        [yearFormat setDateFormat:@"YYYY"];
+        _currentYear = [yearFormat stringFromDate:date];
+    }
+    return _currentYear;
+}
+
 @end

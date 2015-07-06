@@ -15,5 +15,8 @@
 // 格式同上
 - (NSString *)stringRepresentationWithDateFormat:(NSString *)format;
 + (NSDate *)dateRepresentationWithDateFormat:(NSString *)format fromString:(NSString *)dateString;
++ (NSString *)currentMonth;
++ (NSString *)currentYear;
+
 
 @end

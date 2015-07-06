@@ -28,6 +28,7 @@
 #import "UIButton+SMFoundation.h"
 #import "UIBarButtonItem+SMFoundation.h"
 #import "UIApplication+SMFoundation.h"
+#import "NSTimer+SMFoundation.h"
 #import "SMAlertView.h"
 #import "SMBlock.h"
 #import "SMCommon.h"
