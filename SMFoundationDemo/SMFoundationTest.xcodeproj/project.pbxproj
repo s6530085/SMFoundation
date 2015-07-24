@@ -36,6 +36,7 @@
 		387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */; };
 		387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
 		38EBF4A71B4776E8002A8EE5 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */; };
+		38F1AEA91B60BBAE00C672C0 /* SMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1AEA81B60BBAE00C672C0 /* SMCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SMFoundation.m"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
 		38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAlertView.h; path = ../SMFoundation/SMAlertView.h; sourceTree = "<group>"; };
 		38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAlertView.m; path = ../SMFoundation/SMAlertView.m; sourceTree = "<group>"; };
+		38F1AEA81B60BBAE00C672C0 /* SMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCommon.m; path = ../SMFoundation/SMCommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				04B8080D1B2563D100C0600F /* SMBlock.h */,
 				04B8080E1B2563D100C0600F /* SMBlock.m */,
 				04B808061B2536AA00C0600F /* SMCommon.h */,
+				38F1AEA81B60BBAE00C672C0 /* SMCommon.m */,
 				04B808071B2536AA00C0600F /* SMFoundation.h */,
 			);
 			name = SMFoundation;
@@ -349,6 +352,7 @@
 				04B8080B1B255DDB00C0600F /* README.md in Sources */,
 				04B8080F1B2563D100C0600F /* SMBlock.m in Sources */,
 				04B808181B257D5D00C0600F /* NSObject+SMFoundation.m in Sources */,
+				38F1AEA91B60BBAE00C672C0 /* SMCommon.m in Sources */,
 				04B8081B1B2586B500C0600F /* NSArray+SMFoundation.m in Sources */,
 				04B8082A1B25924600C0600F /* UIImageView+SMFoundation.m in Sources */,
 				04B8083C1B25965700C0600F /* NSFileManager+SMFoundation.m in Sources */,
@@ -488,8 +492,8 @@
 		04B807FE1B2533ED00C0600F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,8 +502,8 @@
 		04B807FF1B2533ED00C0600F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

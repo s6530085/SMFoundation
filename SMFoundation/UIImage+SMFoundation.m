@@ -241,4 +241,46 @@
     return [UIImage imageNamed:imageName];
 }
 
+
+
+- (UIImage *)scaledImage
+{
+    return [self scaledImageExtend:NO];
+}
+
+
+- (UIImage *)scaledImageExtend:(BOOL)extend
+{
+    if (extend) {
+        NSInteger scale = kScreenScale;
+        if (scale == 1) {
+            return self;
+        }
+        else {
+            // 即使是2倍的也有两种尺寸，所以还是要一起防缩一下
+            if (self.size.width == kScreenWidth) {
+                return self;
+            }
+            else {
+                return [self scaledToFitSize:CGSizeMake(kScreenWidth, ceilf(kScreenWidth * self.size.height / self.size.width))];
+            }
+        }
+    }
+    else {
+        return self;
+    }
+}
+
+
++ (UIImage *)scaledImageNamed:(NSString *)imageName
+{
+    return [[UIImage imageNamed:imageName] scaledImage];
+}
+
+
++ (UIImage *)scaledImageNamed:(NSString *)imageName extend:(BOOL)extend
+{
+    return [[UIImage imageNamed:imageName] scaledImageExtend:extend];
+}
+
 @end

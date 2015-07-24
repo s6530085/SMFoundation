@@ -26,4 +26,10 @@
 // 暂时只支持竖屏的4,5,6,6p四种尺寸
 + (UIImage *)launchingImage;
 
+// 以下是用于适配的，一般来说，普通图片只需要加载3x的即可，但是那些需要按比例拉伸的，则需要细化处理,当然拉伸肯定是和屏幕等宽啦，如果需要特别比例拉伸就自己算比例去
+- (UIImage *)scaledImage;
+- (UIImage *)scaledImageExtend:(BOOL)extend;
++ (UIImage *)scaledImageNamed:(NSString *)imageName;
++ (UIImage *)scaledImageNamed:(NSString *)imageName extend:(BOOL)extend;
+
 @end

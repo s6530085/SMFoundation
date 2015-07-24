@@ -272,24 +272,14 @@
 
 - (CGFloat)singleLineWidthWithFont:(UIFont *)font
 {
-    if (kSystemVersionReachesIOS7) {
-        return [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MIN) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:font} context:nil].size.width;
-    }
-    else {
-        return [self sizeWithFont:font constrainedToSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MIN)].width;
-    }
+    return [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MIN) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:font} context:nil].size.width;
 }
 
 
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width
 {
-    if (kSystemVersionReachesIOS7) {
-        NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
-        return [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:options attributes:@{NSFontAttributeName:font} context:nil].size;
-    }
-    else {
-        return [self sizeWithFont:font constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)];
-    }
+    NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    return [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:options attributes:@{NSFontAttributeName:font} context:nil].size;
 }
 
 

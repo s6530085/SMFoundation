@@ -15,6 +15,6 @@
 
 + (void)createDirectoryIfNotExistedAtPath:(NSString *)path;
 - (void)removeFileAtPath:(NSString *)path condition:(BOOL (^)(NSString *))block;
-+ (BOOL)removeItemIfExistsAtPath:(NSString *)path error:(NSError **)error;
++ (BOOL)removeItemIfExistsAtPath:(NSString *)path error:(NSError *)error;
 
 @end

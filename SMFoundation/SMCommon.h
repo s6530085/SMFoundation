@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 
+extern CGRect kScreenBounds();
 #define kScreenBounds               [[UIScreen mainScreen] bounds]
 #define kApplicationFrame           [[UIScreen mainScreen] applicationFrame]
 

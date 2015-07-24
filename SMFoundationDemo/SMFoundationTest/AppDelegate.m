@@ -17,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    AppScreenType t = [application screenType];
+//    AppScreenType t = [application screenType];
+    NSLog(@"%d", __IPHONE_OS_VERSION_MAX_ALLOWED);
     // Override point for customization after application launch.
     return YES;
 }

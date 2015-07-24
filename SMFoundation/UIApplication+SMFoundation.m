@@ -14,19 +14,19 @@
 
 - (void)startRemovePush
 {
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
-        
+    if ([self respondsToSelector:@selector(registerUserNotificationSettings:)]) {
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge
                                                                                              |UIUserNotificationTypeSound
                                                                                              |UIUserNotificationTypeAlert)
                                                                                  categories:nil];
         [self registerUserNotificationSettings:settings];
         [self registerForRemoteNotifications];
-#else
+    }
+    else {
         [self registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge
                                                   |UIRemoteNotificationTypeSound
                                                   |UIRemoteNotificationTypeAlert)];
-#endif
+    }
 }
 
 
@@ -42,13 +42,10 @@
 
 - (BOOL)dialPhone:(NSString *)phoneNumber
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@", phoneNumber]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phoneNumber]];
     if (![self canOpenURL:url]) {
-        url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phoneNumber]];
-        if (![self canOpenURL:url]) {
-            // 不能打电话就拉到
-            return NO;
-        }
+        // 不能打电话就拉到
+        return NO;
     }
     
     [self openURL:url];

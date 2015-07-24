@@ -75,11 +75,11 @@
 }
 
 
-+ (BOOL)removeItemIfExistsAtPath:(NSString *)path error:(NSError **)error
++ (BOOL)removeItemIfExistsAtPath:(NSString *)path error:(NSError *)error
 {
     BOOL result = NO;
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-        result = [[NSFileManager defaultManager] removeItemAtPath:path error:error];
+        result = [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
     }
     return result;
 }

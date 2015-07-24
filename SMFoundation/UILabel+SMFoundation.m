@@ -47,9 +47,7 @@
 {
     CGFloat height = 0.0f;
     if (maxLineCount == 0) {
-        CGSize size = [text sizeWithFont:self.font
-                       constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX)
-                           lineBreakMode:NSLineBreakByWordWrapping];
+        CGSize size = [text sizeWithFont:self.font constrainedToWidth:self.width];
         height = size.height;
         *constrained = NO;
     }
@@ -59,12 +57,9 @@
             [testString appendString:@"\nX"];
         }
         
-        CGFloat maxHeight = [testString sizeWithFont:self.font
-                                   constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX)
-                                       lineBreakMode:NSLineBreakByWordWrapping].height;
-        CGFloat textHeight = [text sizeWithFont:self.font
-                              constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX)
-                                  lineBreakMode:NSLineBreakByWordWrapping].height;
+        
+        CGFloat maxHeight = [testString sizeWithFont:self.font constrainedToWidth:self.width].height;
+        CGFloat textHeight = [text sizeWithFont:self.font constrainedToWidth:self.width].height;
         if (maxHeight < textHeight) {
             *constrained = YES;
             height = maxHeight;
@@ -85,9 +80,7 @@
 
 - (void)setSingleLineText:(NSString *)text constrainedToWidth:(CGFloat)maxWidth
 {
-    CGSize size = [text sizeWithFont:self.font
-                            forWidth:maxWidth
-                       lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize size = [text sizeWithFont:self.font constrainedToWidth:self.width];
     CGFloat offsetX = size.width - self.frame.size.width;
     [self setSize:size];
     switch (self.textAlignment) {

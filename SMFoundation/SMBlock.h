@@ -9,18 +9,9 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^SMBaseBlock)();
+typedef void (^SMSelectIndexBlock)(NSInteger selectedIndex);
 typedef void (^SMParameterBlock)(id);
 typedef BOOL (^SMValidateBlock)(id);
-
-// Thanks to: https://gist.github.com/1057420
-#define SHARED_INSTANCE_USING_BLOCK(block) \
-static dispatch_once_t pred = 0; \
-__strong static id _sharedObject = nil; \
-dispatch_once(&pred, ^{ \
-_sharedObject = block(); \
-}); \
-return _sharedObject; \
-
 
 extern void sm_dispatch_execute_in_worker_queue(dispatch_block_t block);
 extern void sm_dispatch_execute_in_main_queue(dispatch_block_t block);
