@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../README.md">
+      <sourceFolder url="file://$MODULE_DIR$/../README.md" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation.podspec">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation.podspec" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSArray+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSArray+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSArray+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSArray+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSDate+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSDate+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSDate+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSDate+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSDictionary+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSDictionary+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSDictionary+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSDictionary+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSFileManager+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSFileManager+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSFileManager+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSFileManager+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSMutableArray+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSMutableArray+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSMutableArray+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSMutableArray+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSObject+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSObject+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSObject+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSObject+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSString+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSString+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSString+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSString+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSTimer+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSTimer+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/NSTimer+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/NSTimer+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMAlertView.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMAlertView.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMAlertView.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMAlertView.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMBlock.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMBlock.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMBlock.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMBlock.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMCommon.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMCommon.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMCommon.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMCommon.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIApplication+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIApplication+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIApplication+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIApplication+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIBarButtonItem+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIBarButtonItem+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIBarButtonItem+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIBarButtonItem+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIButton+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIButton+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIButton+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIButton+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIColor+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIColor+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIColor+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIColor+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIImage+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIImage+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIImage+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIImage+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIImageView+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIImageView+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIImageView+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIImageView+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UILabel+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UILabel+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UILabel+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UILabel+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITableView+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITableView+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITableView+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITableView+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITextField+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITextField+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITextField+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITextField+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITextView+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITextView+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UITextView+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UITextView+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIView+SMFoundation.h">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIView+SMFoundation.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../SMFoundation/UIView+SMFoundation.m">
+      <sourceFolder url="file://$MODULE_DIR$/../SMFoundation/UIView+SMFoundation.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

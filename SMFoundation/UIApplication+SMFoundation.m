@@ -56,10 +56,10 @@
 - (AppScreenType)screenType
 {
     // 有可能screen不包括statusbar，所以要放宽
-    if (kScreenScale == 1.0f) {
+    if (kScreenScale() == 1.0f) {
         return AppScreenTypeNonRetina;
     }
-    CGFloat screenHeight = kScreenHeight;
+    CGFloat screenHeight = kScreenHeight();
     if (screenHeight <= 481.0f) {
         return AppScreenType4;
     }

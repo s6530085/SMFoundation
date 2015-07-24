@@ -96,7 +96,7 @@
 - (NSArray *)captureDisplayImage
 {
     NSMutableArray *a = [NSMutableArray array];
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, kScreenScale);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, kScreenScale());
     for (CALayer *l in self.layer.sublayers) {
         [l renderInContext:UIGraphicsGetCurrentContext()];
         UIImage * img = UIGraphicsGetImageFromCurrentImageContext();

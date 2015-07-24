@@ -38,7 +38,7 @@
     NSMutableArray *pairs = [NSMutableArray array];
     for (NSString *key in [self allKeys])
     {
-        id object = [self objectForKey:key];
+        id object = self[key];
         if (![object isKindOfClass:[NSString class]]) {
             continue;
         }
@@ -50,7 +50,7 @@
 
 - (NSString *)stringForKey:(id)key
 {
-    id object = [self objectForKey:key];
+    id object = self[key];
     if ((object == nil) || ([object isEqual:[NSNull null]])) {
         return @"";
     }

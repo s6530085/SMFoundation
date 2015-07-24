@@ -16,9 +16,9 @@
 + (void)setExcludedFromBackup:(BOOL)excluded forFileAtpath:(NSString *)path
 {
     NSURL *url = [NSURL fileURLWithPath:path];
-    NSString *currentSystemVersion = kSystemVersion;
+    NSString *currentSystemVersion = kSystemVersion();
     if ([currentSystemVersion compare:@"5.1"] != NSOrderedAscending) {
-        [url setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:nil];
+        [url setResourceValue:@(YES) forKey:NSURLIsExcludedFromBackupKey error:nil];
     }
     else if ([currentSystemVersion compare:@"5.0.1"] != NSOrderedAscending) {
         const char* filePath = [[url path] fileSystemRepresentation];

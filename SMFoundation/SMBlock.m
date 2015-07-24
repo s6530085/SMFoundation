@@ -26,9 +26,9 @@ void sm_dispatch_execute_in_main_queue(dispatch_block_t block)
 }
 
 
-void sm_dispatch_execute_in_main_queue_after(double delay, dispatch_block_t block)
+void sm_dispatch_execute_in_main_queue_after(double delaySecond, dispatch_block_t block)
 {
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC);
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delaySecond * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), block);
 }
 

@@ -44,7 +44,7 @@
     size_t length = MIN(width, height);
     CGRect rect = CGRectMake(((width / 2.0f) - (length / 2.0f)), ((height / 2.0f) - (length / 2.0f)), length, length);
     CGImageRef newCG = CGImageCreateWithImageInRect(cg, rect);
-    UIImage *image = [UIImage imageWithCGImage:newCG scale:kScreenScale orientation:self.imageOrientation];
+    UIImage *image = [UIImage imageWithCGImage:newCG scale:kScreenScale() orientation:self.imageOrientation];
     CGImageRelease(newCG);
     return image;
 }
@@ -252,17 +252,17 @@
 - (UIImage *)scaledImageExtend:(BOOL)extend
 {
     if (extend) {
-        NSInteger scale = kScreenScale;
+        NSInteger scale = kScreenScale();
         if (scale == 1) {
             return self;
         }
         else {
             // 即使是2倍的也有两种尺寸，所以还是要一起防缩一下
-            if (self.size.width == kScreenWidth) {
+            if (self.size.width == kScreenWidth()) {
                 return self;
             }
             else {
-                return [self scaledToFitSize:CGSizeMake(kScreenWidth, ceilf(kScreenWidth * self.size.height / self.size.width))];
+                return [self scaledToFitSize:CGSizeMake(kScreenWidth(), ceilf(kScreenWidth() * self.size.height / self.size.width))];
             }
         }
     }
