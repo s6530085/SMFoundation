@@ -31,6 +31,8 @@
 #import "NSTimer+SMFoundation.h"
 #import "SMAlertView.h"
 #import "SMBlock.h"
-#import "SMCommon.h"
+#import "SMSize.h"
+#import "SMVersion.h"
+#import "SMPath.h"
 
 #endif

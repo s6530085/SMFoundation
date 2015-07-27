@@ -7,8 +7,8 @@
 //
 
 #import "UIImage+SMFoundation.h"
-#import "SMCommon.h"
 #import "UIApplication+SMFoundation.h"
+#import "SMSize.h"
 
 @implementation UIImage (SMFoundation)
 

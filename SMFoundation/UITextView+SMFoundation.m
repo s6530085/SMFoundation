@@ -8,7 +8,7 @@
 
 #import "UITextView+SMFoundation.h"
 #import "NSString+SMFoundation.h"
-#import "SMCommon.h"
+#import "SMVersion.h"
 
 @implementation UITextView (SMFoundation)
 
@@ -22,7 +22,7 @@
 
 - (CGFloat)textHeight
 {
-    if (kSystemVersionReachesIOS7) {
+    if (kSystemVersionReachesIOS7()) {
         // This is the code for iOS 7. contentSize no longer returns the correct value, so
         // we have to calculate it.
         //

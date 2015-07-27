@@ -36,7 +36,9 @@
 		387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */; };
 		387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
 		38EBF4A71B4776E8002A8EE5 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */; };
-		38F1AEA91B60BBAE00C672C0 /* SMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1AEA81B60BBAE00C672C0 /* SMCommon.m */; };
+		38F99B7F1B65FDF700E235BB /* SMSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B7E1B65FDF700E235BB /* SMSize.m */; };
+		38F99B821B65FE3F00E235BB /* SMVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B811B65FE3F00E235BB /* SMVersion.m */; };
+		38F99B851B65FE5F00E235BB /* SMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B841B65FE5F00E235BB /* SMPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,6 @@
 		04B807F91B2533ED00C0600F /* SMFoundationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFoundationTestTests.m; sourceTree = "<group>"; };
 		04B808041B2536AA00C0600F /* NSString+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SMFoundation.h"; path = "../SMFoundation/NSString+SMFoundation.h"; sourceTree = "<group>"; };
 		04B808051B2536AA00C0600F /* NSString+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SMFoundation.m"; path = "../SMFoundation/NSString+SMFoundation.m"; sourceTree = "<group>"; };
-		04B808061B2536AA00C0600F /* SMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCommon.h; path = ../SMFoundation/SMCommon.h; sourceTree = "<group>"; };
 		04B808071B2536AA00C0600F /* SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMFoundation.h; path = ../SMFoundation/SMFoundation.h; sourceTree = "<group>"; };
 		04B808091B255DDB00C0600F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		04B8080A1B255DDB00C0600F /* SMFoundation.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMFoundation.podspec; path = ../../SMFoundation.podspec; sourceTree = "<group>"; };
@@ -108,7 +109,12 @@
 		387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SMFoundation.m"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
 		38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAlertView.h; path = ../SMFoundation/SMAlertView.h; sourceTree = "<group>"; };
 		38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAlertView.m; path = ../SMFoundation/SMAlertView.m; sourceTree = "<group>"; };
-		38F1AEA81B60BBAE00C672C0 /* SMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCommon.m; path = ../SMFoundation/SMCommon.m; sourceTree = "<group>"; };
+		38F99B7D1B65FDF700E235BB /* SMSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSize.h; path = ../SMFoundation/SMSize.h; sourceTree = "<group>"; };
+		38F99B7E1B65FDF700E235BB /* SMSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSize.m; path = ../SMFoundation/SMSize.m; sourceTree = "<group>"; };
+		38F99B801B65FE3F00E235BB /* SMVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMVersion.h; path = ../SMFoundation/SMVersion.h; sourceTree = "<group>"; };
+		38F99B811B65FE3F00E235BB /* SMVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMVersion.m; path = ../SMFoundation/SMVersion.m; sourceTree = "<group>"; };
+		38F99B831B65FE5F00E235BB /* SMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMPath.h; path = ../SMFoundation/SMPath.h; sourceTree = "<group>"; };
+		38F99B841B65FE5F00E235BB /* SMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMPath.m; path = ../SMFoundation/SMPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,8 +241,12 @@
 				38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */,
 				04B8080D1B2563D100C0600F /* SMBlock.h */,
 				04B8080E1B2563D100C0600F /* SMBlock.m */,
-				04B808061B2536AA00C0600F /* SMCommon.h */,
-				38F1AEA81B60BBAE00C672C0 /* SMCommon.m */,
+				38F99B7D1B65FDF700E235BB /* SMSize.h */,
+				38F99B7E1B65FDF700E235BB /* SMSize.m */,
+				38F99B801B65FE3F00E235BB /* SMVersion.h */,
+				38F99B811B65FE3F00E235BB /* SMVersion.m */,
+				38F99B831B65FE5F00E235BB /* SMPath.h */,
+				38F99B841B65FE5F00E235BB /* SMPath.m */,
 				04B808071B2536AA00C0600F /* SMFoundation.h */,
 			);
 			name = SMFoundation;
@@ -346,16 +356,18 @@
 				387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */,
 				04B808081B2536AA00C0600F /* NSString+SMFoundation.m in Sources */,
 				04B807E61B2533ED00C0600F /* ViewController.m in Sources */,
+				38F99B821B65FE3F00E235BB /* SMVersion.m in Sources */,
 				04B808331B2595E200C0600F /* UITextView+SMFoundation.m in Sources */,
 				04B8083F1B25967600C0600F /* NSTimer+SMFoundation.m in Sources */,
 				387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */,
 				04B8080B1B255DDB00C0600F /* README.md in Sources */,
 				04B8080F1B2563D100C0600F /* SMBlock.m in Sources */,
 				04B808181B257D5D00C0600F /* NSObject+SMFoundation.m in Sources */,
-				38F1AEA91B60BBAE00C672C0 /* SMCommon.m in Sources */,
 				04B8081B1B2586B500C0600F /* NSArray+SMFoundation.m in Sources */,
 				04B8082A1B25924600C0600F /* UIImageView+SMFoundation.m in Sources */,
 				04B8083C1B25965700C0600F /* NSFileManager+SMFoundation.m in Sources */,
+				38F99B851B65FE5F00E235BB /* SMPath.m in Sources */,
+				38F99B7F1B65FDF700E235BB /* SMSize.m in Sources */,
 				04B808391B25961B00C0600F /* UITableView+SMFoundation.m in Sources */,
 				04B807E31B2533ED00C0600F /* AppDelegate.m in Sources */,
 				04B808241B258C3800C0600F /* UIColor+SMFoundation.m in Sources */,

@@ -7,7 +7,6 @@
 //
 
 #import "NSString+SMFoundation.h"
-#import "SMCommon.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #import <CommonCrypto/CommonDigest.h>

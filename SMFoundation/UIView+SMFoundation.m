@@ -7,7 +7,7 @@
 //
 
 #import "UIView+SMFoundation.h"
-#import "SMCommon.h"
+#import "SMSize.h"
 
 @implementation UIView (SMFoundation)
 

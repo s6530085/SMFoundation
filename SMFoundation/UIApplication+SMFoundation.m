@@ -7,7 +7,7 @@
 //
 
 #import "UIApplication+SMFoundation.h"
-#import "SMCommon.h"
+#import "SMSize.h"
 
 @implementation UIApplication (SMFoundation)
 

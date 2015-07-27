@@ -7,7 +7,7 @@
 //
 
 #import "NSFileManager+SMFoundation.h"
-#import "SMCommon.h"
+#import "SMVersion.h"
 #import <sys/xattr.h>
 
 @implementation NSFileManager (SMFoundation)
