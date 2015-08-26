@@ -9,21 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-BOOL kUserInterfaceIdiomIsPhone();
-BOOL kUserInterfaceIdiomIsPad();
-BOOL kScreenIs4InchRetina();
-BOOL kScreenLargerThen3Point5InchRetina();
+UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPhone();
+UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPad();
+UIKIT_EXTERN BOOL kScreenIs4InchRetina();
+UIKIT_EXTERN BOOL kScreenLargerThen3Point5InchRetina();
 
-CGRect kScreenBounds();
-CGRect kApplicationFrame();
+UIKIT_EXTERN CGRect kScreenBounds();
+UIKIT_EXTERN CGRect kApplicationFrame();
 
-CGFloat kScreenScale();
-NSInteger kIntegerScreenScale();
+UIKIT_EXTERN CGFloat kScreenScale();
+UIKIT_EXTERN NSInteger kIntegerScreenScale();
 
-CGFloat kScreenWidth();
-CGFloat kScreenHeight();
+UIKIT_EXTERN CGFloat kScreenWidth();
+UIKIT_EXTERN CGFloat kScreenHeight();
 
-CGFloat kStatusBarMaxY();
+UIKIT_EXTERN CGFloat kStatusBarMaxY();
 
 
 UIKIT_EXTERN const CGFloat kStandardTableViewCellHeight;

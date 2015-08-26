@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <UIkit/UIKit.h>
 
-NSString *kSystemVersion();
+UIKIT_EXTERN NSString *kSystemVersion();
 
-BOOL kSystemVersionPriorToIOS6();
+UIKIT_EXTERN BOOL kSystemVersionPriorToIOS6();
 
-BOOL kSystemVersionPriorToIOS7();
+UIKIT_EXTERN BOOL kSystemVersionPriorToIOS7();
 
-BOOL kSystemVersionReachesIOS7();
+UIKIT_EXTERN BOOL kSystemVersionReachesIOS7();
 
-BOOL kSystemVersionPriorToIOS8();
+UIKIT_EXTERN BOOL kSystemVersionPriorToIOS8();
 
-BOOL kSystemVersionReachesIOS8();
+UIKIT_EXTERN BOOL kSystemVersionReachesIOS8();
 
-NSString *kApplicationBundleVersion();
+UIKIT_EXTERN NSString *kApplicationBundleVersion();
 
-NSString *kApplicationVersion();
+UIKIT_EXTERN NSString *kApplicationVersion();

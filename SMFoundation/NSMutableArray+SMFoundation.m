@@ -11,7 +11,6 @@
 
 @implementation NSMutableArray (SMFoundation)
 
-
 + (NSMutableArray *)nullArrayWithCapacity:(NSUInteger)capacity
 {
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:capacity];

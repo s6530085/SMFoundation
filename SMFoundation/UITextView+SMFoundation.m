@@ -12,8 +12,6 @@
 
 @implementation UITextView (SMFoundation)
 
-
-
 - (BOOL)isEmptyAfterTrimmingWhitespaceAndNewlineCharacters
 {
     return self.text == nil || [self.text isEmptyAfterTrimmingWhitespaceAndNewlineCharacters];

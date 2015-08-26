@@ -12,7 +12,6 @@
 
 @implementation NSObject (SMFoundation)
 
-
 - (BOOL)notNilOrEmpty
 {
     if ((NSNull *)self == [NSNull null]) {

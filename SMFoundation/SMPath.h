@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-NSString *kPathTemp();
+UIKIT_EXTERN NSString *kPathTemp();
 
-NSString *kPathDocument();
+UIKIT_EXTERN NSString *kPathDocument();
 
-NSString *kPathLibraryCache();
+UIKIT_EXTERN NSString *kPathLibraryCache();
+

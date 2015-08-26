@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void (^SMBaseBlock)();
 typedef void (^SMSelectIndexBlock)(NSInteger selectedIndex);
 typedef void (^SMParameterBlock)(id);
 typedef BOOL (^SMValidateBlock)(id);
 
-extern void sm_dispatch_execute_in_worker_queue(dispatch_block_t block);
-extern void sm_dispatch_execute_in_main_queue(dispatch_block_t block);
-extern void sm_dispatch_execute_in_main_queue_after(double delaySecond, dispatch_block_t block);
-
-
-extern BOOL sm_option_contains_bit(NSUInteger option, NSUInteger bit);
+UIKIT_EXTERN void sm_dispatch_execute_in_worker_queue(dispatch_block_t block);
+UIKIT_EXTERN void sm_dispatch_execute_in_main_queue(dispatch_block_t block);
+UIKIT_EXTERN void sm_dispatch_execute_in_main_queue_after(double delaySecond, dispatch_block_t block);
+UIKIT_EXTERN BOOL sm_option_contains_bit(NSUInteger option, NSUInteger bit);
 
