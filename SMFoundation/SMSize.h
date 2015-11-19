@@ -11,6 +11,8 @@
 
 UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPhone();
 UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPad();
+UIKIT_EXTERN BOOL kScreenIs5Point5InchRetina();
+UIKIT_EXTERN BOOL kScreenIs4Point7InchRetina();
 UIKIT_EXTERN BOOL kScreenIs4InchRetina();
 UIKIT_EXTERN BOOL kScreenLargerThen3Point5InchRetina();
 

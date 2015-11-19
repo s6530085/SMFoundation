@@ -78,7 +78,7 @@
 {
     // 创建一个bitmap的context
     // 并把它设置成为当前正在使用的context
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, kScreenScale());
     // 绘制改变大小的图片
     [self drawInRect:CGRectMake(0.0f, 0.0f, size.width, size.height)];
     // 从当前context中创建一个改变大小后的图片
@@ -106,7 +106,7 @@
 
 + (UIImage *)retina4CompatibleImageNamed:(NSString *)imageName
 {
-    if (kScreenIs4InchRetina) {
+    if (kScreenIs4InchRetina()) {
         NSString *retina4ImageName = [imageName stringByAppendingString:@"-568h"];
         return [UIImage imageNamed:retina4ImageName];
     }
@@ -213,6 +213,7 @@
     AppScreenType type = [[UIApplication sharedApplication] screenType];
     NSString *imageName = nil;
     // things to http://stackoverflow.com/questions/19107543/xcode-5-asset-catalog-how-to-reference-the-launchimage
+    // todosm  这个其实取决于图片你归在哪个iOS版本之下
     switch (type) {
         case AppScreenTypeNonRetina:
             imageName = @"LaunchImage.png";

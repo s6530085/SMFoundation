@@ -16,4 +16,6 @@
 // 单独重载一行的
 - (void)reloadRowAtIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)rowAnimation;
 
++ (CGFloat)standardCellHeight;
+
 @end

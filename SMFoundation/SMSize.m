@@ -19,6 +19,19 @@ BOOL kUserInterfaceIdiomIsPad()
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
 }
 
+
+BOOL kScreenIs5Point5InchRetina()
+{
+    return (([UIScreen mainScreen].scale == 3.0f) && ([UIScreen mainScreen].bounds.size.height == 736.0f));
+}
+
+
+BOOL kScreenIs4Point7InchRetina()
+{
+    return (([UIScreen mainScreen].scale == 2.0f) && ([UIScreen mainScreen].bounds.size.height == 667.0f));
+}
+
+
 BOOL kScreenIs4InchRetina()
 {
     return (([UIScreen mainScreen].scale == 2.0f) && ([UIScreen mainScreen].bounds.size.height == 568.0f));
@@ -35,6 +48,7 @@ CGRect kScreenBounds()
 {
     return [[UIScreen mainScreen] bounds];
 }
+
 
 CGRect kApplicationFrame()
 {

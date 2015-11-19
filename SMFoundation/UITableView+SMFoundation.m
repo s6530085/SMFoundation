@@ -52,4 +52,10 @@
     [self reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:rowAnimation];
 }
 
+
++ (CGFloat)standardCellHeight
+{
+    return 44.0f;
+}
+
 @end

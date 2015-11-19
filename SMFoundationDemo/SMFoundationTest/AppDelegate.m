@@ -17,9 +17,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    AppScreenType t = [application screenType];
-    NSLog(@"%d", __IPHONE_OS_VERSION_MAX_ALLOWED);
-    // Override point for customization after application launch.
+
+    dispatch_block_t t1 = ^{
+        sm_dispatch_execute_in_main_queue_after(1.0, ^{
+           printf("%d\n", 1);
+        });
+    };
+    dispatch_block_t t2 = ^{
+        printf("%d\n", 2);
+    };
+    dispatch_block_t t3 = ^{
+        printf("%d\n", 3);
+    };
+    dispatch_block_t t4 = ^{
+        printf("%d\n", 4);
+    };
+    
+    dispatch_block_t t = ^{
+        printf("%s\n", "finish");
+    };
+    
+    sm_dispatch_tasks(@[t1, t2, t3, t4], t);
     return YES;
 }
 
