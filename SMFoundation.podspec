@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SMFoundation'
-  s.version      = '0.1.9'
+  s.version      = '0.2.0'
   s.summary      = "Study_Sun's convenince function toolkit."
   s.homepage     = 'https://github.com/s6530085/SMFoundation'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
