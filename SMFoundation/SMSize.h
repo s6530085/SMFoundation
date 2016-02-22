@@ -15,6 +15,7 @@ UIKIT_EXTERN BOOL kScreenIs5Point5InchRetina();
 UIKIT_EXTERN BOOL kScreenIs4Point7InchRetina();
 UIKIT_EXTERN BOOL kScreenIs4InchRetina();
 UIKIT_EXTERN BOOL kScreenLargerThen3Point5InchRetina();
+UIKIT_EXTERN BOOL kScreenLessThen4Point7InchRetina();
 
 UIKIT_EXTERN CGRect kScreenBounds();
 UIKIT_EXTERN CGRect kApplicationFrame();
@@ -28,8 +29,8 @@ UIKIT_EXTERN CGFloat kScreenHeight();
 UIKIT_EXTERN CGFloat kStatusBarMaxY();
 
 
-UIKIT_EXTERN const CGFloat kStandardTableViewCellHeight;
-UIKIT_EXTERN const CGFloat kStandardButtonHeight;
+UIKIT_EXTERN CGFloat kStandardTableViewCellHeight();
+UIKIT_EXTERN CGFloat kStandardButtonHeight();
 UIKIT_EXTERN const CGFloat kStandardButtonLeftMargin;
 UIKIT_EXTERN const CGFloat kStandardLabelHeight;
 UIKIT_EXTERN const CGFloat kStandardNavigationHeight;

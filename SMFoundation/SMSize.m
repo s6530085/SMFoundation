@@ -44,6 +44,12 @@ BOOL kScreenLargerThen3Point5InchRetina()
 }
 
 
+BOOL kScreenLessThen4Point7InchRetina()
+{
+    return [UIScreen mainScreen].bounds.size.width <= 320.0f;
+}
+
+
 CGRect kScreenBounds()
 {
     return [[UIScreen mainScreen] bounds];
@@ -86,8 +92,26 @@ CGFloat kStatusBarMaxY()
     return CGRectGetMaxY([[UIApplication sharedApplication] statusBarFrame]);
 }
 
-const CGFloat kStandardTableViewCellHeight = 44.0f;
-const CGFloat kStandardButtonHeight = 44.0f;
+CGFloat kStandardTableViewCellHeight()
+{
+    if (kScreenLessThen4Point7InchRetina()) {
+        return 44.0f;
+    }
+    else if (kScreenIs4Point7InchRetina()) {
+        return 47.0f;
+    }
+    else {
+        return 50.0f;
+    }
+}
+
+
+CGFloat kStandardButtonHeight()
+{
+    return kStandardTableViewCellHeight();
+}
+
+
 const CGFloat kStandardButtonLeftMargin = 14.0f;
 const CGFloat kStandardLabelHeight = 20.0f;
 const CGFloat kStandardNavigationHeight = 44.0f;
