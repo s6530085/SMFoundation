@@ -13,6 +13,8 @@
 
 - (void)removeAllGestureRecognizer;
 - (void)removeAllSubviews;
+// 只移除特定类型的子控件
+- (void)removeAllSubviewsWhenInstancesOfClasses:(NSArray *)classes;
 - (void)addSubviews:(NSArray *)sb;
 - (void)addAlwaysFitSubview:(UIView *)subview;
 - (void)addAlwaysFitSubview:(UIView *)subview withEdgeInsets:(UIEdgeInsets)edgeInsets;

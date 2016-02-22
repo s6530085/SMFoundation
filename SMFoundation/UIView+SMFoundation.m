@@ -30,6 +30,19 @@
 }
 
 
+- (void)removeAllSubviewsWhenInstancesOfClasses:(NSArray *)classes
+{
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        for (Class class in classes) {
+            if ([obj isKindOfClass:class]) {
+                [obj removeFromSuperview];
+                break;
+            }
+        }
+    }];
+}
+
+
 - (void)addSubviews:(NSArray *)sb
 {
     if ([sb count] == 0) {
