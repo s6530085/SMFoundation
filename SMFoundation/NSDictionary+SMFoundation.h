@@ -12,7 +12,7 @@
 
 - (NSMutableDictionary *)mutableDeepCopy;
 - (NSString *)stringRepresentationByURLEncoding;
-- (NSString *)stringForKey:(id)key;
+- (NSString *)sm_stringForKey:(id)key;
 - (NSDate *)dateForKey:(id)key;
 - (NSInteger)integerForKey:(id)key;
 

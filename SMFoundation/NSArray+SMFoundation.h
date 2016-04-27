@@ -20,4 +20,7 @@
 - (NSArray *)transformedArrayUsingHandler:(id (^)(id originalObject, NSUInteger index))handler;
 - (NSRange)fullRange;
 
+- (NSArray *)sm_map:(id(^)(id obj))block;
+- (void)sm_apply:(void(^)(id obj))block;
+
 @end

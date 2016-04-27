@@ -48,7 +48,7 @@
 }
 
 
-- (NSString *)stringForKey:(id)key
+- (NSString *)sm_stringForKey:(id)key
 {
     id object = self[key];
     if ((object == nil) || ([object isEqual:[NSNull null]])) {

@@ -8,8 +8,29 @@
 
 #import "UIApplication+SMFoundation.h"
 #import "SMSize.h"
+#import "SMVersion.h"
 
 @implementation UIApplication (SMFoundation)
+
+- (BOOL)isPushOpened
+{
+    if ([self respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
+        return [self isRegisteredForRemoteNotifications];
+    }
+    else {
+        UIRemoteNotificationType pushType = [self enabledRemoteNotificationTypes];
+        return pushType != UIRemoteNotificationTypeNone;
+    }
+}
+
+
+- (void)openPushSetting
+{
+    if (kSystemVersionReachesIOS8()) {
+        [self openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
+    // 否则什么也做不了
+}
 
 
 - (void)startRemovePush

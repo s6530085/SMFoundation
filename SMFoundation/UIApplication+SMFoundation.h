@@ -20,6 +20,8 @@ typedef NS_ENUM(NSInteger, AppScreenType) {
 
 @interface UIApplication (SMFoundation)
 
+- (BOOL)isPushOpened;
+- (void)openPushSetting;
 - (void)startRemovePush;
 - (void)clearNotificationMark;
 - (BOOL)dialPhone:(NSString *)phoneNumber;

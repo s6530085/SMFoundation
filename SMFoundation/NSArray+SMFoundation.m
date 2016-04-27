@@ -81,4 +81,25 @@
 }
 
 
+- (NSArray *)sm_map:(id(^)(id obj))block
+{
+    NSMutableArray *a = @[].mutableCopy;
+    for (id o in self) {
+        id on = block(o);
+        // 理论上应该是每个都有对应的，但为了简单还是蓉搓一下
+        if (on) {
+            [a addObject: on];
+        }
+    }
+    return [NSArray arrayWithArray: a];
+}
+
+
+- (void)sm_apply:(void(^)(id obj))block
+{
+    for (id o in self) {
+        block(o);
+    }
+}
+
 @end
