@@ -16,7 +16,7 @@ CGFloat kStatusBarMaxY()
 
 CGFloat kStandardTableViewCellHeight()
 {
-    if (![[UIScreen mainScreen] sm_largerThen4Point7Inch]) {
+    if (![[UIScreen mainScreen] sm_reaches4Point7Inch]) {
         return 44.0f;
     }
     else if ([[UIScreen mainScreen] sm_is4Point7Inch]) {

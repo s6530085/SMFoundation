@@ -17,10 +17,9 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     
-    BOOL b = [[UIScreen mainScreen] sm_is4Point7Inch];
-    BOOL c = [[UIDevice currentDevice] sm_systemVersionReaches:@"10"];
     return YES;
 }
 

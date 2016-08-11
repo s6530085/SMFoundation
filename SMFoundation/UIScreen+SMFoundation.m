@@ -49,9 +49,9 @@
 }
 
 
-- (BOOL)sm_largerThen3Point5Inch
+- (BOOL)sm_reaches3Point5Inch
 {
-    return [self sm_portraitHeight] > 480.0f;
+    return [self sm_portraitHeight] >= 480.0f;
 }
 
 
@@ -61,9 +61,9 @@
 }
 
 
-- (BOOL)sm_largerThen4Inch
+- (BOOL)sm_reaches4Inch
 {
-    return [self sm_portraitHeight] > 560.0f;
+    return [self sm_portraitHeight] >= 560.0f;
 }
 
 
@@ -73,9 +73,9 @@
 }
 
 
-- (BOOL)sm_largerThen4Point7Inch
+- (BOOL)sm_reaches4Point7Inch
 {
-    return [self sm_portraitHeight] > 667.0f;
+    return [self sm_portraitHeight] >= 667.0f;
 }
 
 
@@ -85,9 +85,9 @@
 }
 
 
-- (BOOL)sm_largerThen5Point5Inch
+- (BOOL)sm_reaches5Point5Inch
 {
-    return [self sm_portraitHeight] > 736.0f;
+    return [self sm_portraitHeight] >= 736.0f;
 }
 
 @end

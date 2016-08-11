@@ -19,13 +19,13 @@
 
 // 和版本比较一样，也是存在屏幕是否是某某尺寸的，或者屏幕大于某某尺寸的两种比较
 - (BOOL)sm_is3Point5Inch;
-- (BOOL)sm_largerThen3Point5Inch;
+- (BOOL)sm_reaches3Point5Inch;
 - (BOOL)sm_is4Inch;
-- (BOOL)sm_largerThen4Inch;
+- (BOOL)sm_reaches4Inch;
 - (BOOL)sm_is4Point7Inch;
-- (BOOL)sm_largerThen4Point7Inch;
+- (BOOL)sm_reaches4Point7Inch;
 - (BOOL)sm_is5Point5Inch;
-- (BOOL)sm_largerThen5Point5Inch;
+- (BOOL)sm_reaches5Point5Inch;
 
 
 @end
