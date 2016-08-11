@@ -35,9 +35,11 @@
 		04B808421B25968400C0600F /* UIApplication+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B808411B25968400C0600F /* UIApplication+SMFoundation.m */; };
 		387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */; };
 		387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */; };
+		387BD4141D51DC8A00CBA6BD /* UIScreen+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 387BD4131D51DC8A00CBA6BD /* UIScreen+SMFoundation.m */; };
+		388190EB1D337C4100E63327 /* UIDevice+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 388190EA1D337C4100E63327 /* UIDevice+SMFoundation.m */; };
+		388190EE1D337C9B00E63327 /* NSBundle+SMFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 388190ED1D337C9B00E63327 /* NSBundle+SMFoundation.m */; };
 		38EBF4A71B4776E8002A8EE5 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */; };
 		38F99B7F1B65FDF700E235BB /* SMSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B7E1B65FDF700E235BB /* SMSize.m */; };
-		38F99B821B65FE3F00E235BB /* SMVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B811B65FE3F00E235BB /* SMVersion.m */; };
 		38F99B851B65FE5F00E235BB /* SMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F99B841B65FE5F00E235BB /* SMPath.m */; };
 /* End PBXBuildFile section */
 
@@ -107,12 +109,16 @@
 		387A1EB51B42887700EF154F /* UIButton+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SMFoundation.m"; path = "../SMFoundation/UIButton+SMFoundation.m"; sourceTree = "<group>"; };
 		387A1EBA1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+SMFoundation.h"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.h"; sourceTree = "<group>"; };
 		387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SMFoundation.m"; path = "../SMFoundation/UIBarButtonItem+SMFoundation.m"; sourceTree = "<group>"; };
+		387BD4121D51DC8A00CBA6BD /* UIScreen+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScreen+SMFoundation.h"; path = "../SMFoundation/UIScreen+SMFoundation.h"; sourceTree = "<group>"; };
+		387BD4131D51DC8A00CBA6BD /* UIScreen+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+SMFoundation.m"; path = "../SMFoundation/UIScreen+SMFoundation.m"; sourceTree = "<group>"; };
+		388190E91D337C4100E63327 /* UIDevice+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SMFoundation.h"; path = "../SMFoundation/UIDevice+SMFoundation.h"; sourceTree = "<group>"; };
+		388190EA1D337C4100E63327 /* UIDevice+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+SMFoundation.m"; path = "../SMFoundation/UIDevice+SMFoundation.m"; sourceTree = "<group>"; };
+		388190EC1D337C9B00E63327 /* NSBundle+SMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+SMFoundation.h"; path = "../SMFoundation/NSBundle+SMFoundation.h"; sourceTree = "<group>"; };
+		388190ED1D337C9B00E63327 /* NSBundle+SMFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+SMFoundation.m"; path = "../SMFoundation/NSBundle+SMFoundation.m"; sourceTree = "<group>"; };
 		38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAlertView.h; path = ../SMFoundation/SMAlertView.h; sourceTree = "<group>"; };
 		38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAlertView.m; path = ../SMFoundation/SMAlertView.m; sourceTree = "<group>"; };
 		38F99B7D1B65FDF700E235BB /* SMSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSize.h; path = ../SMFoundation/SMSize.h; sourceTree = "<group>"; };
 		38F99B7E1B65FDF700E235BB /* SMSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSize.m; path = ../SMFoundation/SMSize.m; sourceTree = "<group>"; };
-		38F99B801B65FE3F00E235BB /* SMVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMVersion.h; path = ../SMFoundation/SMVersion.h; sourceTree = "<group>"; };
-		38F99B811B65FE3F00E235BB /* SMVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMVersion.m; path = ../SMFoundation/SMVersion.m; sourceTree = "<group>"; };
 		38F99B831B65FE5F00E235BB /* SMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMPath.h; path = ../SMFoundation/SMPath.h; sourceTree = "<group>"; };
 		38F99B841B65FE5F00E235BB /* SMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMPath.m; path = ../SMFoundation/SMPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,14 +243,18 @@
 				387A1EBB1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m */,
 				04B808401B25968400C0600F /* UIApplication+SMFoundation.h */,
 				04B808411B25968400C0600F /* UIApplication+SMFoundation.m */,
+				388190E91D337C4100E63327 /* UIDevice+SMFoundation.h */,
+				388190EA1D337C4100E63327 /* UIDevice+SMFoundation.m */,
+				388190EC1D337C9B00E63327 /* NSBundle+SMFoundation.h */,
+				388190ED1D337C9B00E63327 /* NSBundle+SMFoundation.m */,
+				387BD4121D51DC8A00CBA6BD /* UIScreen+SMFoundation.h */,
+				387BD4131D51DC8A00CBA6BD /* UIScreen+SMFoundation.m */,
 				38EBF4A51B4776E8002A8EE5 /* SMAlertView.h */,
 				38EBF4A61B4776E8002A8EE5 /* SMAlertView.m */,
 				04B8080D1B2563D100C0600F /* SMBlock.h */,
 				04B8080E1B2563D100C0600F /* SMBlock.m */,
 				38F99B7D1B65FDF700E235BB /* SMSize.h */,
 				38F99B7E1B65FDF700E235BB /* SMSize.m */,
-				38F99B801B65FE3F00E235BB /* SMVersion.h */,
-				38F99B811B65FE3F00E235BB /* SMVersion.m */,
 				38F99B831B65FE5F00E235BB /* SMPath.h */,
 				38F99B841B65FE5F00E235BB /* SMPath.m */,
 				04B808071B2536AA00C0600F /* SMFoundation.h */,
@@ -296,7 +306,7 @@
 		04B807D21B2533ED00C0600F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = study_sun;
 				TargetAttributes = {
 					04B807D91B2533ED00C0600F = {
@@ -352,12 +362,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388190EB1D337C4100E63327 /* UIDevice+SMFoundation.m in Sources */,
 				04B8081E1B2587F100C0600F /* NSMutableArray+SMFoundation.m in Sources */,
 				387A1EBC1B428B7B00EF154F /* UIBarButtonItem+SMFoundation.m in Sources */,
 				04B808081B2536AA00C0600F /* NSString+SMFoundation.m in Sources */,
 				04B807E61B2533ED00C0600F /* ViewController.m in Sources */,
-				38F99B821B65FE3F00E235BB /* SMVersion.m in Sources */,
+				387BD4141D51DC8A00CBA6BD /* UIScreen+SMFoundation.m in Sources */,
 				04B808331B2595E200C0600F /* UITextView+SMFoundation.m in Sources */,
+				388190EE1D337C9B00E63327 /* NSBundle+SMFoundation.m in Sources */,
 				04B8083F1B25967600C0600F /* NSTimer+SMFoundation.m in Sources */,
 				387A1EB61B42887700EF154F /* UIButton+SMFoundation.m in Sources */,
 				04B8080B1B255DDB00C0600F /* README.md in Sources */,
@@ -442,6 +454,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -507,6 +520,7 @@
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -517,6 +531,7 @@
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -535,6 +550,7 @@
 				);
 				INFOPLIST_FILE = SMFoundationTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMFoundationTest.app/SMFoundationTest";
 			};
@@ -550,6 +566,7 @@
 				);
 				INFOPLIST_FILE = SMFoundationTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMFoundationTest.app/SMFoundationTest";
 			};

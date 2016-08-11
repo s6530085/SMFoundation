@@ -7,85 +7,7 @@
 //
 
 #import "SMSize.h"
-
-BOOL kUserInterfaceIdiomIsPhone()
-{
-    return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
-}
-
-
-BOOL kUserInterfaceIdiomIsPad()
-{
-    return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
-}
-
-
-BOOL kScreenIs5Point5InchRetina()
-{
-    return (([UIScreen mainScreen].scale == 3.0f) && ([UIScreen mainScreen].bounds.size.height == 736.0f));
-}
-
-
-BOOL kScreenIs4Point7InchRetina()
-{
-    return (([UIScreen mainScreen].scale == 2.0f) && ([UIScreen mainScreen].bounds.size.height == 667.0f));
-}
-
-
-BOOL kScreenIs4InchRetina()
-{
-    return (([UIScreen mainScreen].scale == 2.0f) && ([UIScreen mainScreen].bounds.size.height == 568.0f));
-}
-
-
-BOOL kScreenLargerThen3Point5InchRetina()
-{
-    return (([UIScreen mainScreen].scale >= 2.0f) && ([UIScreen mainScreen].bounds.size.height > 480.0f));
-}
-
-
-BOOL kScreenLessThen4Point7InchRetina()
-{
-    return [UIScreen mainScreen].bounds.size.width <= 320.0f;
-}
-
-
-CGRect kScreenBounds()
-{
-    return [[UIScreen mainScreen] bounds];
-}
-
-
-CGRect kApplicationFrame()
-{
-    return [[UIScreen mainScreen] applicationFrame];
-}
-
-
-CGFloat kScreenScale()
-{
-    return  ([UIScreen instancesRespondToSelector:@selector(scale)]?[[UIScreen mainScreen] scale]:(1.0f));
-}
-
-
-NSInteger kIntegerScreenScale()
-{
-    CGFloat f =  kScreenScale();
-    return (NSInteger)f;
-}
-
-
-CGFloat kScreenWidth()
-{
-    return ([[UIScreen mainScreen] applicationFrame].size.width);
-}
-
-
-CGFloat kScreenHeight()
-{
-    return ([[UIScreen mainScreen] applicationFrame].size.height);
-}
-
+#import "UIScreen+SMFoundation.h"
 
 CGFloat kStatusBarMaxY()
 {
@@ -94,10 +16,10 @@ CGFloat kStatusBarMaxY()
 
 CGFloat kStandardTableViewCellHeight()
 {
-    if (kScreenLessThen4Point7InchRetina()) {
+    if (![[UIScreen mainScreen] sm_largerThen4Point7Inch]) {
         return 44.0f;
     }
-    else if (kScreenIs4Point7InchRetina()) {
+    else if ([[UIScreen mainScreen] sm_is4Point7Inch]) {
         return 47.0f;
     }
     else {

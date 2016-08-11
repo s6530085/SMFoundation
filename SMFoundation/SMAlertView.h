@@ -13,17 +13,17 @@ typedef BOOL (^SMAlertValidateBlock)();
 
 @interface SMAlertView : UIAlertView
 
-@property (nonatomic, copy) SMTouchBlock block;
-@property (nonatomic, copy) SMAlertValidateBlock validateBlock;
+@property (nullable, nonatomic, copy) SMTouchBlock block;
+@property (nullable, nonatomic, copy) SMAlertValidateBlock validateBlock;
 
 // 只有一个other按钮
-- (id)initWithTitle:(NSString *)title
-            message:(NSString *)message
-  cancelButtonTitle:(NSString *)cancelButtonTitle
-   otherButtonTitle:(NSString *)otherButtonTitle
-              block:(SMTouchBlock)block;
+- (nonnull instancetype)initWithTitle:(nullable NSString *)title
+            message:(nullable NSString *)message
+  cancelButtonTitle:(nullable NSString *)cancelButtonTitle
+   otherButtonTitle:(nullable NSString *)otherButtonTitle
+              block:(nullable SMTouchBlock)block;
 
 // 仅展示一个标题为"温馨提示", 一个确定按钮的提示框
-+ (void)showAlertMessage:(NSString *)message;
++ (void)showAlertMessage:(nullable NSString *)message;
 
 @end

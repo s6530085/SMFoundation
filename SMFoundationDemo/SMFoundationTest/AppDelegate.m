@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SMFoundation.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,27 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    dispatch_block_t t1 = ^{
-        sm_dispatch_execute_in_main_queue_after(1.0, ^{
-           printf("%d\n", 1);
-        });
-    };
-    dispatch_block_t t2 = ^{
-        printf("%d\n", 2);
-    };
-    dispatch_block_t t3 = ^{
-        printf("%d\n", 3);
-    };
-    dispatch_block_t t4 = ^{
-        printf("%d\n", 4);
-    };
     
-    dispatch_block_t t = ^{
-        printf("%s\n", "finish");
-    };
-    
-    sm_dispatch_tasks(@[t1, t2, t3, t4], t);
+    BOOL b = [[UIScreen mainScreen] sm_is4Point7Inch];
+    BOOL c = [[UIDevice currentDevice] sm_systemVersionReaches:@"10"];
     return YES;
 }
 

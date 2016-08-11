@@ -11,11 +11,11 @@
 @implementation SMAlertView
 
 
-- (id)initWithTitle:(NSString *)title
-            message:(NSString *)message
-  cancelButtonTitle:(NSString *)cancelButtonTitle
-   otherButtonTitle:(NSString*)otherButtonTitle
-              block:(SMTouchBlock)block {
+- (nonnull instancetype)initWithTitle:(nullable NSString *)title
+            message:(nullable NSString *)message
+  cancelButtonTitle:(nullable NSString *)cancelButtonTitle
+   otherButtonTitle:(nullable NSString*)otherButtonTitle
+              block:(nullable SMTouchBlock)block {
     self = [super initWithTitle:title
                         message:message
                        delegate:self
@@ -28,7 +28,7 @@
 }
 
 
-+ (void)showAlertMessage:(NSString *)message
++ (void)showAlertMessage:(nullable NSString *)message
 {
     SMAlertView *alert = [[SMAlertView alloc] initWithTitle:@"温馨提示" message:message cancelButtonTitle:@"确定" otherButtonTitle:nil block:nil];
     [alert show];

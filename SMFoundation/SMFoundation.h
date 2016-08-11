@@ -32,7 +32,8 @@
 #import "SMAlertView.h"
 #import "SMBlock.h"
 #import "SMSize.h"
-#import "SMVersion.h"
 #import "SMPath.h"
-
+#import "UIDevice+SMFoundation.h"
+#import "NSBundle+SMFoundation.h"
+#import "UIScreen+SMFoundation.h"
 #endif

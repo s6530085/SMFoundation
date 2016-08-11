@@ -59,3 +59,7 @@
 
 
 @end
+
+// 一些对CGRect和CGPoint等的操作就写这里了
+CG_EXTERN CGFloat sm_RectCenterX(CGRect rect);
+CG_EXTERN CGFloat sm_RectCenterY(CGRect rect);

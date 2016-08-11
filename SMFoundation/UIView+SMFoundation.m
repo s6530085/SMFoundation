@@ -109,7 +109,7 @@
 - (NSArray *)captureDisplayImage
 {
     NSMutableArray *a = [NSMutableArray array];
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, kScreenScale());
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, [UIScreen mainScreen].scale);
     for (CALayer *l in self.layer.sublayers) {
         [l renderInContext:UIGraphicsGetCurrentContext()];
         UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
@@ -301,3 +301,15 @@
 }
 
 @end
+
+
+CGFloat sm_RectCenterX(CGRect rect)
+{
+    return rect.origin.x + rect.size.width/2.0;
+}
+
+
+CGFloat sm_RectCenterY(CGRect rect)
+{
+    return rect.origin.y + rect.size.height/2.0;
+}

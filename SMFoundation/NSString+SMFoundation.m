@@ -15,7 +15,7 @@
 
 @implementation NSString (SMFoundation)
 
-- (NSString *)md5String
+- (NSString *)sm_md5String
 {
     const char *cStr = [self UTF8String];
     unsigned char result[16];

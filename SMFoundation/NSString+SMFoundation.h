@@ -11,7 +11,7 @@
 
 @interface NSString (SMFoundation)
 
-- (instancetype)md5String;
+- (instancetype)sm_md5String;
 
 - (BOOL)isEmptyAfterTrimmingWhitespaceAndNewlineCharacters;
 - (NSString *)stringByTrimmingWhitespaceAndNewlineCharacters;

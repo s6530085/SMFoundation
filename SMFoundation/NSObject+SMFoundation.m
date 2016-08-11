@@ -12,7 +12,7 @@
 
 @implementation NSObject (SMFoundation)
 
-- (BOOL)notNilOrEmpty
+- (BOOL)sm_notNullOrEmpty
 {
     if ((NSNull *)self == [NSNull null]) {
         return NO;
@@ -34,7 +34,7 @@
 }
 
 
-- (instancetype)brustCopy
+- (nonnull instancetype)sm_brustCopy
 {
     Class class = [self class];
     id object = [[class alloc] init];
@@ -83,7 +83,7 @@
 }
 
 
-+ (instancetype)sm_sharedInstance
++ (nonnull instancetype)sm_sharedInstance
 {
     static dispatch_once_t pred = 0;
     // 用不了typeof(self)因为类方法里这是个class
@@ -92,6 +92,21 @@
         _sharedObject = [[self alloc] init];
     });
     return _sharedObject;
+}
+
+
+- (nullable NSString *)sm_JSONString
+{
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
+    if ([jsonData length] > 0 && error == nil) {
+        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    else {
+        return nil;
+    }
 }
 
 @end

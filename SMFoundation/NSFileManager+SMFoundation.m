@@ -7,7 +7,6 @@
 //
 
 #import "NSFileManager+SMFoundation.h"
-#import "SMVersion.h"
 #import <sys/xattr.h>
 
 @implementation NSFileManager (SMFoundation)
@@ -16,16 +15,7 @@
 + (void)setExcludedFromBackup:(BOOL)excluded forFileAtpath:(NSString *)path
 {
     NSURL *url = [NSURL fileURLWithPath:path];
-    NSString *currentSystemVersion = kSystemVersion();
-    if ([currentSystemVersion compare:@"5.1"] != NSOrderedAscending) {
-        [url setResourceValue:@(YES) forKey:NSURLIsExcludedFromBackupKey error:nil];
-    }
-    else if ([currentSystemVersion compare:@"5.0.1"] != NSOrderedAscending) {
-        const char* filePath = [[url path] fileSystemRepresentation];
-        const char* attrName = "com.apple.MobileBackup";
-        u_int8_t attrValue = 1;
-        setxattr(filePath, attrName, &attrValue, sizeof(attrValue), 0, 0);
-    }
+    [url setResourceValue:@(YES) forKey:NSURLIsExcludedFromBackupKey error:nil];
 }
 
 

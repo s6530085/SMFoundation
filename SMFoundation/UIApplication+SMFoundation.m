@@ -8,7 +8,7 @@
 
 #import "UIApplication+SMFoundation.h"
 #import "SMSize.h"
-#import "SMVersion.h"
+#import "UIDevice+SMFoundation.h"
 
 @implementation UIApplication (SMFoundation)
 
@@ -26,7 +26,7 @@
 
 - (void)openPushSetting
 {
-    if (kSystemVersionReachesIOS8()) {
+    if ([[UIDevice currentDevice] sm_systemVersionReachesIOS8]) {
         [self openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
     }
     // 否则什么也做不了
@@ -61,7 +61,7 @@
 }
 
 
-- (BOOL)dialPhone:(NSString *)phoneNumber
+- (BOOL)dialPhone:(nonnull NSString *)phoneNumber
 {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phoneNumber]];
     if (![self canOpenURL:url]) {
@@ -72,31 +72,5 @@
     [self openURL:url];
     return YES;
 }
-
-
-- (AppScreenType)screenType
-{
-    // 有可能screen不包括statusbar，所以要放宽
-    if (kScreenScale() == 1.0f) {
-        return AppScreenTypeNonRetina;
-    }
-    CGFloat screenHeight = kScreenHeight();
-    if (screenHeight <= 481.0f) {
-        return AppScreenType4;
-    }
-    else if (screenHeight <= 569.0f) {
-        return AppScreenType5;
-    }
-    else if (screenHeight <= 668.0f) {
-        return AppScreenType6;
-    }
-    else if (screenHeight <= 1105.0f) {
-        return AppScreenType6p;
-    }
-    else {
-        return AppScreenTypeUnknown;
-    }
-}
-
 
 @end

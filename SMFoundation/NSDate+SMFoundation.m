@@ -11,7 +11,7 @@
 @implementation NSDate (SMFoundation)
 
 static NSDateFormatter *formatter_ = nil;
-- (NSString *)stringRepresentationWithDateFormat:(NSString *)format
+- (nonnull NSString *)sm_stringRepresentationWithDateFormat:(nullable NSString *)format
 {
     if (formatter_ == nil) {
         formatter_ = [[NSDateFormatter alloc] init];
@@ -29,17 +29,16 @@ static NSDateFormatter *formatter_ = nil;
 }
 
 
-- (NSDate *)dateRepresentationWithDateFormat:(NSString *)format
+- (nonnull NSDate *)sm_dateRepresentationWithDateFormat:(nullable NSString *)format
 {
-    return [formatter_ dateFromString:[self stringRepresentationWithDateFormat:format]];
+    return [formatter_ dateFromString:[self sm_stringRepresentationWithDateFormat:format]];
 }
 
 
-+ (NSDate *)dateRepresentationWithDateFormat:(NSString *)format fromString:(NSString *)dateString
++ (nonnull NSDate *)sm_dateRepresentationWithDateFormat:(nullable NSString *)format fromString:(nonnull NSString *)dateString
 {
     if (formatter_ == nil) {
         formatter_ = [[NSDateFormatter alloc] init];
-        //        [formatter_ setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     }
     NSString *dateFormat = nil;
     if (format == nil) {
@@ -53,29 +52,36 @@ static NSDateFormatter *formatter_ = nil;
 }
 
 
-+ (NSString *)currentMonth
++ (nonnull NSString *)sm_currentDay
 {
-    static NSString *_currnetMonth = nil;
-    if (_currnetMonth == nil) {
-        NSDateFormatter *monthFormat = [[NSDateFormatter alloc] init];
-        [monthFormat setDateFormat:@"MM"];
-        NSDate *date = [NSDate date];
-        _currnetMonth = [monthFormat stringFromDate:date];
+    static NSDateFormatter *dayFormat_ = nil;
+    if (dayFormat_ == nil) {
+        dayFormat_ = [[NSDateFormatter alloc] init];
+        [dayFormat_ setDateFormat:@"DD"];
     }
-    return _currnetMonth;
+    return [dayFormat_ stringFromDate:[NSDate date]];
 }
 
 
-+ (NSString *)currentYear
++ (nonnull NSString *)sm_currentMonth
 {
-    static NSString *_currentYear = nil;
-    if (_currentYear == nil) {
-        NSDate *date = [NSDate date];
-        NSDateFormatter *yearFormat = [[NSDateFormatter alloc] init];
-        [yearFormat setDateFormat:@"YYYY"];
-        _currentYear = [yearFormat stringFromDate:date];
+    static NSDateFormatter *monthFormat_ = nil;
+    if (monthFormat_ == nil) {
+        monthFormat_ = [[NSDateFormatter alloc] init];
+        [monthFormat_ setDateFormat:@"MM"];
     }
-    return _currentYear;
+    return [monthFormat_ stringFromDate:[NSDate date]];
+}
+
+
++ (nonnull NSString *)sm_currentYear
+{
+    static NSDateFormatter *yearFormat_ = nil;
+    if (yearFormat_ == nil) {
+        yearFormat_ = [[NSDateFormatter alloc] init];
+        [yearFormat_ setDateFormat:@"YYYY"];
+    }
+    return [yearFormat_ stringFromDate:[NSDate date]];
 }
 
 @end
