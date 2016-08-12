@@ -30,7 +30,7 @@
 - (CGFloat)sm_portraitHeight
 {
     static CGFloat height_ = 0;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         if ([self respondsToSelector:@selector(nativeBounds)]) {
             height_ = CGRectGetHeight([self nativeBounds])/[self sm_integerScale];
         }

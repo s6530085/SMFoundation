@@ -51,9 +51,3 @@ void sm_dispatch_tasks(NSArray *tasks, dispatch_block_t finishBlock)
     }
     dispatch_group_notify(group, dispatch_get_main_queue(), finishBlock);
 }
-
-void sm_dispatch_once(dispatch_block_t block)
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, block);
-}

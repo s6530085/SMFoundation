@@ -27,7 +27,7 @@
 - (BOOL)sm_systemVersionEqualsToIOS7
 {
     static BOOL equals_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         equals_ = [self sm_systemVersionEqualsTo:@"7"];
     });
     return equals_;
@@ -37,7 +37,7 @@
 - (BOOL)sm_systemVersionReachesIOS7
 {
     static BOOL reaches_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         reaches_ = [self sm_systemVersionReaches:@"7"];
     });
     return reaches_;
@@ -47,7 +47,7 @@
 - (BOOL)sm_systemVersionEqualsToIOS8
 {
     static BOOL equals_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         equals_ = [self sm_systemVersionEqualsTo:@"8"];
     });
     return equals_;
@@ -57,7 +57,7 @@
 - (BOOL)sm_systemVersionReachesIOS8
 {
     static BOOL reaches_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         reaches_ = [self sm_systemVersionReaches:@"8"];
     });
     return reaches_;
@@ -67,7 +67,7 @@
 - (BOOL)sm_systemVersionEqualsToIOS9
 {
     static BOOL equals_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         equals_ = [self sm_systemVersionEqualsTo:@"9"];
     });
     return equals_;
@@ -77,7 +77,7 @@
 - (BOOL)sm_systemVersionReachesIOS9
 {
     static BOOL reaches_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         reaches_ = [self sm_systemVersionReaches:@"9"];
     });
     return reaches_;
@@ -87,7 +87,7 @@
 - (BOOL)sm_systemVersionEqualsToIOS10
 {
     static BOOL equals_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         equals_ = [self sm_systemVersionEqualsTo:@"10"];
     });
     return equals_;
@@ -97,7 +97,7 @@
 - (BOOL)sm_systemVersionReachesIOS10
 {
     static BOOL reaches_;
-    sm_dispatch_once(^{
+    SM_DISPATCH_ONCE(^{
         reaches_ = [self sm_systemVersionReaches:@"10"];
     });
     return reaches_;

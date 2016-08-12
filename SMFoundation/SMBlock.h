@@ -20,4 +20,10 @@ UIKIT_EXTERN void sm_dispatch_execute_in_main_queue_after(double delaySecond, di
 UIKIT_EXTERN BOOL sm_option_contains_bit(NSUInteger option, NSUInteger bit);
 // 在子线程中异步并行执行完tasks后，进行finish的回调，tasks的元素是也是dispatch_block_t
 UIKIT_EXTERN void sm_dispatch_tasks(NSArray *tasks, dispatch_block_t finishBlock);
-UIKIT_EXTERN void sm_dispatch_once(dispatch_block_t block);
+#define SM_DISPATCH_ONCE(block) \
+do {\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, block);\
+}\
+while(0)\
+

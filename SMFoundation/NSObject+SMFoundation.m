@@ -83,18 +83,6 @@
 }
 
 
-+ (nonnull instancetype)sm_sharedInstance
-{
-    static dispatch_once_t pred = 0;
-    // 用不了typeof(self)因为类方法里这是个class
-    static id _sharedObject = nil;
-    dispatch_once(&pred, ^{
-        _sharedObject = [[self alloc] init];
-    });
-    return _sharedObject;
-}
-
-
 - (nullable NSString *)sm_JSONString
 {
     NSError *error = nil;

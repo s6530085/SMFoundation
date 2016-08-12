@@ -19,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    BOOL b = [[UIScreen mainScreen] sm_is4Inch];
+    b = [[UIScreen mainScreen] sm_reaches5Point5Inch];
     return YES;
 }
 
