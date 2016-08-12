@@ -10,13 +10,13 @@
 
 @implementation NSBundle (SMFoundation)
 
-+ (nullable NSString *)sm_mainBundleVersion;
++ (nonnull NSString *)sm_mainBundleVersion;
 {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
 
-+ (nullable NSString *)sm_mainBundleBuild;
++ (nonnull NSString *)sm_mainBundleBuild;
 {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
 }
