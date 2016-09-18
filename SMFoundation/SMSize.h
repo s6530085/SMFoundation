@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
 
 UIKIT_EXTERN CGFloat kStatusBarMaxY();
 
@@ -17,3 +18,5 @@ UIKIT_EXTERN const CGFloat kStandardButtonLeftMargin;
 UIKIT_EXTERN const CGFloat kStandardLabelHeight;
 UIKIT_EXTERN const CGFloat kStandardNavigationHeight;
 UIKIT_EXTERN const CGFloat kStandardTabBarHeight;
+
+NS_ASSUME_NONNULL_END

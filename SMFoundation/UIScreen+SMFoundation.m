@@ -32,7 +32,7 @@
     static CGFloat height_ = 0;
     SM_DISPATCH_ONCE(^{
         if ([self respondsToSelector:@selector(nativeBounds)]) {
-            height_ = CGRectGetHeight([self nativeBounds])/[self sm_integerScale];
+            height_ = CGRectGetHeight([self nativeBounds])/self.scale;
         }
         else {
             height_ = [self sm_height];

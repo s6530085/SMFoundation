@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^SMTouchBlock)(NSInteger);
 typedef BOOL (^SMAlertValidateBlock)();
@@ -27,3 +28,4 @@ typedef BOOL (^SMAlertValidateBlock)();
 + (void)showAlertMessage:(nullable NSString *)message;
 
 @end
+NS_ASSUME_NONNULL_END

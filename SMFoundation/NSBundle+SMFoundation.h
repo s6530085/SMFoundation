@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSBundle (SMFoundation)
 
 // 这里为何显示出mainBundle了呢，因为bundle可能确实有很多实例,而且其他bundle根本没有响应的键值啊,所以就写成类方法而不是实例方法了
 // 这个是版本号，其实也就是CFBundleShortVersionString的值
-+ (nonnull NSString *)sm_mainBundleVersion;
++ (NSString *)sm_mainBundleVersion;
 
 // build号
-+ (nonnull NSString *)sm_mainBundleBuild;
++ (NSString *)sm_mainBundleBuild;
+
+// bundleID
++ (NSString *)sm_mainBundleID;
 
 @end
+NS_ASSUME_NONNULL_END

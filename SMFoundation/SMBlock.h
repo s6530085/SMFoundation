@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 typedef void (^SMBaseBlock)();
 typedef void (^SMSelectIndexBlock)(NSInteger selectedIndex);
 typedef void (^SMParameterBlock)(id);
@@ -27,3 +27,4 @@ dispatch_once(&onceToken, block);\
 }\
 while(0)\
 
+NS_ASSUME_NONNULL_END

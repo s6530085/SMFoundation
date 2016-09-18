@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSMutableArray (SMFoundation)
 
 + (NSMutableArray *)nullArrayWithCapacity:(NSUInteger)capacity;
@@ -20,3 +20,4 @@
 - (void)appendUniqueObjectsFromArray:(NSArray *)otherArray;
 
 @end
+NS_ASSUME_NONNULL_END

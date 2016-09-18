@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIImageView (SMFoundation)
 
 
@@ -16,3 +16,4 @@
 - (void)setCenterImage:(UIImage *)centerImage;
 
 @end
+NS_ASSUME_NONNULL_END

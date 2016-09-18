@@ -34,7 +34,7 @@
 }
 
 
-- (nonnull instancetype)sm_brustCopy
+- (instancetype)sm_brustCopy
 {
     Class class = [self class];
     id object = [[class alloc] init];
@@ -83,7 +83,7 @@
 }
 
 
-- (nullable NSString *)sm_JSONString
+- (NSString *)sm_JSONString
 {
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self

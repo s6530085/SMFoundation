@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (SMFoundation)
 
 // 判断实际类型，处理了NSNull，和NSString
 - (BOOL)sm_notNullOrEmpty;
-- (nonnull instancetype)sm_brustCopy;
+- (instancetype)sm_brustCopy;
 - (nullable NSString *)sm_JSONString;
 
 @end
+NS_ASSUME_NONNULL_END

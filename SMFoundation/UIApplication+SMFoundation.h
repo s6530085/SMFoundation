@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIApplication (SMFoundation)
 
 - (BOOL)isPushOpened;
 - (void)openPushSetting;
 - (void)startRemovePush;
 - (void)clearNotificationMark;
-- (BOOL)dialPhone:(nonnull NSString *)phoneNumber;
+- (BOOL)dialPhone:(NSString *)phoneNumber;
 
 @end
+NS_ASSUME_NONNULL_END

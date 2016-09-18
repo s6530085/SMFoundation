@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSString (SMFoundation)
 
 - (instancetype)sm_md5String;
@@ -26,10 +26,10 @@
 - (BOOL)isMatchedByRegex:(NSString *)regex;
 
 - (NSRange)firstRangeOfURLSubstring;
-- (NSString *)firstURLSubstring;
+- (nullable NSString *)firstURLSubstring;
 - (NSArray *)URLSubstrings;
-- (NSString *)firstMatchUsingRegularExpression:(NSRegularExpression *)regularExpression;
-- (NSString *)firstMatchUsingRegularExpressionPattern:(NSString *)regularExpressionPattern;
+- (nullable NSString *)firstMatchUsingRegularExpression:(NSRegularExpression *)regularExpression;
+- (nullable NSString *)firstMatchUsingRegularExpressionPattern:(NSString *)regularExpressionPattern;
 // 注意这个是全文匹配,而且默认已经是不区分大小写的
 - (BOOL)matchesRegularExpressionPattern:(NSString *)regularExpressionPattern;
 - (NSRange)rangeOfFirstMatchUsingRegularExpressionPattern:(NSString *)regularExpressionPattern;
@@ -62,4 +62,4 @@
 
 @end
 
-
+NS_ASSUME_NONNULL_END

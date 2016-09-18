@@ -21,4 +21,10 @@
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
 }
 
+
++ (nonnull NSString *)sm_mainBundleID
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleIdentifierKey];
+}
+
 @end

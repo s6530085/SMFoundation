@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIDevice (SMFoundation)
 // 对大版本提供两种比较，比如系统是否是6，以及系统是否达到了6，大部分情况用达到即可，但是可能有些系统性的bug出现在特定操作系统
 // 因为不太可能有除了currentDevice之外的设备，所以就写成类方法了
@@ -29,3 +29,5 @@
 
 UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPhone();
 UIKIT_EXTERN BOOL kUserInterfaceIdiomIsPad();
+
+NS_ASSUME_NONNULL_END

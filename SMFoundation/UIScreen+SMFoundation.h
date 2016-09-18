@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 // 这里主要是一些屏幕尺寸的便捷方法
 @interface UIScreen (SMFoundation)
 
@@ -39,3 +39,5 @@ UIKIT_EXTERN const CGFloat kStandardButtonLeftMargin;
 UIKIT_EXTERN const CGFloat kStandardLabelHeight;
 UIKIT_EXTERN const CGFloat kStandardNavigationHeight;
 UIKIT_EXTERN const CGFloat kStandardTabBarHeight;
+
+NS_ASSUME_NONNULL_END

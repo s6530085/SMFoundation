@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSArray (SMFoundation)
 
-- (id)firstObject;
+- (nullable id)firstObject;
 
 - (NSArray *)arrayWithObjectsPassingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate;
 - (NSArray *)arrayByRemovingObjectsOfClass:(Class)aClass;
@@ -24,3 +24,4 @@
 - (void)sm_apply:(void(^)(id obj))block;
 
 @end
+NS_ASSUME_NONNULL_END

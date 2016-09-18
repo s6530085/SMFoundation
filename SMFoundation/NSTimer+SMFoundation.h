@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSTimer (SMFoundation)
 
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval block:(void(^)())block repeats:(BOOL)repeats;
 
 @end
+NS_ASSUME_NONNULL_END

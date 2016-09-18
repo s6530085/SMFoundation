@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UITextView (SMFoundation)
 
 - (BOOL)isEmptyAfterTrimmingWhitespaceAndNewlineCharacters;
@@ -15,3 +15,4 @@
 - (CGFloat)textHeight;
 
 @end
+NS_ASSUME_NONNULL_END

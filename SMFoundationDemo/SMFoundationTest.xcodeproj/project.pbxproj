@@ -311,6 +311,7 @@
 				TargetAttributes = {
 					04B807D91B2533ED00C0600F = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = K89RQ3A2PQ;
 					};
 					04B807F21B2533ED00C0600F = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -517,6 +518,7 @@
 		04B807FE1B2533ED00C0600F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = K89RQ3A2PQ;
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +530,7 @@
 		04B807FF1B2533ED00C0600F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = K89RQ3A2PQ;
 				INFOPLIST_FILE = SMFoundationTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

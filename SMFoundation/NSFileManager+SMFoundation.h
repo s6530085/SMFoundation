@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface NSFileManager (SMFoundation)
 
 + (void)setExcludedFromBackup:(BOOL)excluded forFileAtpath:(NSString *)path;
@@ -18,3 +18,4 @@
 + (BOOL)removeItemIfExistsAtPath:(NSString *)path error:(NSError *)error;
 
 @end
+NS_ASSUME_NONNULL_END

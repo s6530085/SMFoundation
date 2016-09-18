@@ -86,7 +86,7 @@
     NSMutableArray *a = @[].mutableCopy;
     for (id o in self) {
         id on = block(o);
-        // 理论上应该是每个都有对应的，但为了简单还是蓉搓一下
+        // 理论上应该是每个都有对应的，但为了简单还是容错一下，实际上也成了filter的感觉
         if (on) {
             [a addObject: on];
         }

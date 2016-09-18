@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UITableView (SMFoundation)
 
 - (NSIndexPath *)lastIndexPath;
@@ -19,3 +19,4 @@
 + (CGFloat)standardCellHeight;
 
 @end
+NS_ASSUME_NONNULL_END

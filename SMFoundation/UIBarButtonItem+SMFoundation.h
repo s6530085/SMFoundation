@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIBarButtonItem (SMFoundation)
 
 + (instancetype)itemWithImageName:(NSString *)imageName highlightedImageName:(NSString *)highlightedImageName title:(NSString *)title target:(id)target action:(SEL)action;
@@ -16,3 +16,4 @@
 + (instancetype)itemWithImageName:(NSString *)imageName target:(id)target action:(SEL)action;
 
 @end
+NS_ASSUME_NONNULL_END
