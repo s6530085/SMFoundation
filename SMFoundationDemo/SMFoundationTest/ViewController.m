@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIButton+SMFoundation.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIButton *b = [UIButton buttonWithType:UIButtonTypeCustom];
+    [b sm_centerButtonAndImageWithSpacing:10];
 }
 
 - (void)didReceiveMemoryWarning {

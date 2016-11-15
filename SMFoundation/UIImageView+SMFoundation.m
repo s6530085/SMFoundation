@@ -12,7 +12,7 @@
 @implementation UIImageView (SMFoundation)
 
 
-+ (id)imageViewWithImageName:(NSString *)imageName
++ (instancetype)imageViewWithImageName:(NSString *)imageName
 {
     return [[self alloc] initWithImage:[UIImage imageNamed:imageName]];
 }

@@ -10,7 +10,7 @@
 
 @implementation UIButton (SMFoundation)
 
-+ (id)buttonWithImageName:(NSString *)imageName highlightedImageName:(NSString *)highlightedImageName title:(NSString *)title target:(id)target action:(SEL)action
++ (instancetype)buttonWithImageName:(NSString *)imageName highlightedImageName:(NSString *)highlightedImageName title:(NSString *)title target:(id)target action:(SEL)action
 {
     UIImage *image = [UIImage imageNamed:imageName];
     UIImage *highlightedImage = nil;
