@@ -60,6 +60,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)stringByReplaceWhiteSpace;
 - (NSString *)stringByReplaceFlag:(NSString *)flag;
 
+- (BOOL)isEqualToInsensitiveString:(NSString *)aString;
+
 @end
 
 NS_ASSUME_NONNULL_END

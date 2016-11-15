@@ -49,4 +49,23 @@
     return button;
 }
 
+
+// 左图右文的间隔
+- (void)sm_centerButtonAndImageWithSpacing:(CGFloat)spacing
+{
+    CGFloat insetAmount = spacing / 2.0;
+    self.imageEdgeInsets = UIEdgeInsetsMake(0, -insetAmount, 0, insetAmount);
+    self.titleEdgeInsets = UIEdgeInsetsMake(0, insetAmount, 0, -insetAmount);
+    self.contentEdgeInsets = UIEdgeInsetsMake(0, insetAmount, 0, insetAmount);
+}
+
+// 上图下文哦
+- (void)sm_horizonButtonAndImageWithSpacing:(CGFloat)spacing
+{
+    CGSize imageSize = self.imageView.frame.size;
+    self.titleEdgeInsets = UIEdgeInsetsMake(0.0, - imageSize.width, - (imageSize.height + spacing), 0.0);
+    CGSize titleSize = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName: self.titleLabel.font}];
+    self.imageEdgeInsets = UIEdgeInsetsMake((-titleSize.height + spacing), 0.0, 0.0, -titleSize.width);
+}
+
 @end

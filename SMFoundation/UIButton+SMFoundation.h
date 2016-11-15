@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIButton (SMFoundation)
 
 + (id)buttonWithImageName:(NSString *)imageName highlightedImageName:(NSString *)highlightedImageName title:(NSString *)title target:(id)target action:(SEL)action;
+- (void)sm_centerButtonAndImageWithSpacing:(CGFloat)spacing;
+- (void)sm_horizonButtonAndImageWithSpacing:(CGFloat)spacing;
+
 
 @end
 NS_ASSUME_NONNULL_END

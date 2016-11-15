@@ -345,4 +345,10 @@
     return [self stringByReplacingOccurrencesOfString:flag withString:@""];
 }
 
+
+- (BOOL)isEqualToInsensitiveString:(NSString *)aString
+{
+    return [self caseInsensitiveCompare:aString] == NSOrderedSame;
+}
+
 @end
